@@ -8,17 +8,17 @@
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;  /* для мобильного WebKit */
-  -moz-box-sizing: border-box;  
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0; 
+  padding: 0;
 }
 body {
     background: url("../img/fonBook.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    float: left; 
-    position: relative; 
+    float: left;
+    position: relative;
     width: 100%;
 }
 
@@ -39,13 +39,13 @@ header {
 }
 .jumbotron h1 {
     display: inline-block;  /*border-bottom делаем по ширине текста*/
-    border-bottom: .1em solid #00695c;
-    font-size: 5.5em; 
+    border-bottom: .1em solid hsl(172, 100%, 20%);
+    font-size: 5.5em;
     color: #fff;
 }
 .headerArrow {
     position: absolute;
-    color: #00695c;
+    color: hsl(172, 100%, 20%);
     bottom: 0;
     left: 49%;
     font-size: 2em;
@@ -53,83 +53,83 @@ header {
 
 /*============== timeline в обе стороны===========*/
 .timeline-both-side {
-    float: left; 
-    width: 100%; 
+    float: left;
+    width: 100%;
     margin: 0 0 1em; 
-    position: relative; 
+    position: relative;
 }
 /*================вертикальная шкала==============*/
-.timeline-both-side:before{   
-    background-color: #00695c; 
-    bottom: 1.4em; 
-    content: " "; 
-    left: 50%; 
-    position: absolute; 
-    top: 12em;  
+.timeline-both-side:before{
+    background-color: hsl(172, 100%, 20%);
+    bottom: 1.4em;
+    content: " ";
+    left: 50%;
+    position: absolute;
+    top: 12em;
     width: 1px;
 }
 /*=============кружек в конце шкалы==============*/
-.timeline-both-side:after{ 
+.timeline-both-side:after{
     border-radius: 50%;
     bottom: .1em;
-    content: " "; 
-    height: 1.4em; 
+    content: " ";
+    height: 1.4em;
     width: 1.4em;
     left: 50%;              /*к центру*/
     margin-left: -.68em;     /*центрируем*/
-    position: absolute;  
+    position: absolute;
     border: .2em solid #00695c;
 }
 
 .timeline-both-side li {
-    position: relative; 
-    float: left; 
+    position: relative;
+    float: left;
     width: 100%;
 }
 /*============линии от шкалы к блокам============*/
-.timeline-both-side li .border-line{ 
-    background-color: #00695c; 
-    font-size: 1.4em; 
-    height: 1px; 
-    left: 50%; 
-    margin-left: -8%; 
-    position: absolute; 
-    text-align: center; 
-    top: 50%; 
-    width: 8%; 
+.timeline-both-side li .border-line{
+    background-color: #00695c;
+    font-size: 1.4em;
+    height: 1px;
+    left: 50%;
+    margin-left: -8%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 8%;
 }
 .timeline-both-side li.opposite-side .border-line{
-    left: auto; 
-    right: 50%; 
-    margin-left: 0; 
+    left: auto;
+    right: 50%;
+    margin-left: 0;
     margin-right: -8%;
 }
 /*=======крепления временных блоков========== 2*/
-.timeline-both-side li .border-line:before { 
-    background-color: #00695c; 
-    content: ""; 
-    height: .33em; 
-    position: absolute; 
-    right: -.21em; 
-    top: -0.13em; 
+.timeline-both-side li .border-line:before {
+    background-color: #00695c;
+    content: "";
+    height: .33em;
+    position: absolute;
+    right: -.21em;
+    top: -0.13em;
     width: .33em;
 }
  /*========линия от блока к креплению==========*/
 .timeline-both-side li.opposite-side .border-line:before{
-    left: -0.15em; 
+    left: -0.15em;
     right: auto;
-    } 
+    }
     li.opposite-side {
-      list-style: none;   
+      list-style: none;
     }
 /* block accordions*/
-.timeline-both-side li .timeline-description { 
-    border: .1em solid #00695c; 
+.timeline-both-side li .timeline-description {
+    border: .1em solid #00695c;
     border-top: .3em solid #00695c;
     border-bottom: .3em solid #00695c;
-    float: left; 
-    padding: 0 .7em .1em; 
-    position: relative; 
+    float: left;
+    padding: 0 .7em .1em;
+    position: relative;
     width: 45%;
     background: #E2E2E2;
 }
@@ -161,7 +161,7 @@ header {
         font-size: 4em;
     }
  }
- 
+
 /*======Стили аккордион==========================*/
 .accordionBlock {
     cursor: pointer;
