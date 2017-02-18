@@ -155,6 +155,7 @@ header {
     float: right;
 }
 /*========== timeline в обе стороны end =========================*/
+
 /*==========адаптация под экран меньше 768px=====================*/
  @media (max-width: 768px ) {
      .timeline-both-side:before,
@@ -175,8 +176,17 @@ header {
     }
  }
  @media (max-width: 360px ) {
+    .jumbotron {
+        padding-top: 0;
+    }
     .jumbotron h1 {
-        font-size: 4em;
+        font-size: 2.6em;
+    }
+    .jumbotron p {
+        font-size: 1.1em;
+    }
+    .navbar-brand {
+        font-size: 3em;
     }
  }
 
