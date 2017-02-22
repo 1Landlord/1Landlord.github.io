@@ -61,6 +61,9 @@ header {
 .skill6 {
     animation-delay: 2.5s;
 }
+.skill7 {
+    animation-delay: 2.8s;
+}
 .headerArrow {
     position: absolute;
     color: hsl(172, 100%, 20%);
@@ -206,6 +209,10 @@ header {
     padding: .1em;
     font-family: 'AC Line';
     text-transform: uppercase;
+}
+.forEvernote {
+	width: 1.8em;
+	height: 1.8em;
 }
 /*==================Подвал=====================*/
 footer{
