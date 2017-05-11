@@ -1,110 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="robots" content="index, follow">
-	<!--превью для соц-->
-	<meta property="og:image" content="img/fonBook.jpg"/>
-	<!--Веб-мастер-->
-	<meta name="yandex-verification" content="9322cf9a05b4e298" />
+
 	<title>to Frontend</title>
-	<!-- awesome cdn-->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<!-- bootstrap-bootswatch/cdn -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" type='text/css' href="css/main.css">
-	<link rel="stylesheet" type='text/css' href="css/media.css">
-	<link rel="stylesheet" type='text/css' href="css/owlCarousel/owl.carousel.min.css">
-	<link rel="stylesheet" type='text/css' href="css/owlCarousel/owl.theme.default.min.css">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#F8F8F8">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#F8F8F8">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#F8F8F8">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
 </head>
-<body>
-	<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42239219 = new Ya.Metrika({ id:42239219, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="data:application/octet-stream;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-	<!--================================Навигация================================-->
-	<header role="banner">
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">V.A.CH</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="#home" rel='m_PageScroll2id'>Главная</a></li>
-						<li><a href="#resources" rel='m_PageScroll2id'>Ресурсы</a></li>
-						<li><a href="#resume" rel='m_PageScroll2id'>Резюме</a></li>
-						<li><a href="#portfolio" rel='m_PageScroll2id'>Портфолио</a></li>
-						<li><a href="#skills" rel='m_PageScroll2id'>Навыки</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">"На котятах"<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li role="presentation" class="dropdown-header">Тренировки</li>
-								<li><a href="https://1landlord.github.io/acnostia" target="_blank">Acnostia</a></li>
-								<li><a href="https://1landlord.github.io/BusinesTheme/" target="_blank">Busines Theme</a></li>
-								<li><a href="https://1landlord.github.io/pands/" target="_blank">Pands</a></li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<!-- Modal 
-						<li><a href="#"  data-toggle="modal" data-target="#myModal">Обо мне</a></li>
-						
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title" id="myModalLabel">Обо мне</h4>
-									</div>
-									<div class="modal-body">
-										<p>Информация вот-вот появится...<i class="fa fa-smile-o" aria-hidden="true"></i></p>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						Modal end -->
-						<li><a href="https://vk.com/vacher" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.facebook.com/Vl.Al.Che" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="http://codepen.io/Landlord/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-						<li><a href="https://github.com/Pomechik" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+<body class="ishome">
+<div class="preloader"><div class="pulse"></div></div>
 
-		<div id="Home"></div>
-		<div class="jumbotron">
-			<div class="container">
-				<h1 class="animated fadeInDownBig">My path to Frontend</h1>
-				<p class="animated fadeInLeftBig skill">Навыки работы GIT, Навыки работы SEO</p>
-				<p class="animated fadeInLeftBig skill3">Навыки работы CMS: Wix, inSales, WordPress</p>
-				<p class="animated fadeInLeftBig skill4">Опыт работы фреймворк Bootstrap</p>
-				<p class="animated fadeInLeftBig skill5">Опыт работы HTML5 и CSS3</p>
-				<p class="animated fadeInLeftBig skill6">Практика верстки PSD</p>
-				<p class="animated fadeInLeftBig skill7">Опыт работы CRM торговля, склад Бизнес.ru</p>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter42239219 = new Ya.Metrika({ id:42239219, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="data:application/octet-stream;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+<header>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">V.A.CH</a>
 			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#home" rel='m_PageScroll2id'>Главная</a></li>
+					<li><a href="#resources" rel='m_PageScroll2id'>Ресурсы</a></li>
+					<li><a href="#resume" rel='m_PageScroll2id'>Резюме</a></li>
+					<li><a href="#portfolio" rel='m_PageScroll2id'>Портфолио</a></li>
+					<li><a href="#skills" rel='m_PageScroll2id'>Навыки</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">"На котятах"<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li role="presentation" class="dropdown-header">Тренировки</li>
+							<li><a href="https://1landlord.github.io/acnostia" target="_blank">Acnostia</a></li>
+							<li><a href="https://1landlord.github.io/BusinesTheme/" target="_blank">Busines Theme</a></li>
+							<li><a href="https://1landlord.github.io/pands/" target="_blank">Pands</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://vk.com/vacher" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/Vl.Al.Che" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="http://codepen.io/Landlord/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/Pomechik" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="Home"></div>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="animated fadeInDownBig">My path to the Frontend</h1>
+			<p class="animated fadeInLeftBig skill">Навыки работы GIT, Навыки работы SEO</p>
+			<p class="animated fadeInLeftBig skill3">Навыки работы CMS: Wix, inSales, WordPress</p>
+			<p class="animated fadeInLeftBig skill4">Опыт работы фреймворк Bootstrap</p>
+			<p class="animated fadeInLeftBig skill5">Опыт работы HTML5 и CSS3</p>
+			<p class="animated fadeInLeftBig skill6">Практика верстки PSD</p>
+			<p class="animated fadeInLeftBig skill7">Опыт работы CRM торговля, склад Бизнес.ru</p>
 		</div>
-		<div class="col-sm-12">
-			<div class="mouseWrapp">
-				<div class="mouse-icon"><div class="wheel"></div></div>
-			</div>
-		</div>
-	</header>
+	</div>
+	
+</header>
+
 	<!--==============================Секция ресурсы==============================================-->
 	<div id="resources"></div>
 	<section class="resources yakorMouse">
@@ -112,7 +97,7 @@
 			<div class="row">
 
 				<div class="col-md-12">
-					<h3 class="blokAcc">Ресурсы веб-разработчикам</h3>
+					<h2 class="blokAcc">Ресурсы веб-разработчикам</h2>
 					<p class="text-center lead">Здесь кропотливо собрал контент в Рунете, на тему веб-программирование, которыми сам пользуюсь<small>(ресурсы, как для начинающих, так и для опытных)</small>.</p>
 				</div>
 
@@ -250,16 +235,13 @@
 								</form>
 							</article>
 
-
-
-
 						</div><!--owl-carousel-->
 					</div>
 				</div>
-
 			</div><!--end row-->
 		</div>
 	</section>
+
 	<!--==============================Секция резюме ==============================================-->
 	<div id="resume"></div>
 	<section class="resume">
@@ -267,52 +249,60 @@
 			<div class="row">
 				<div class="resumeContainer darkSection">
 					<div class="col-md-12">
-						<h3 class="blokAcc darkSection">Мое резюме</h3>
+						<h2 class="blokAcc darkSection">Мое резюме</h2>
 					</div>
 					<div class="col-md-6 left">
 						<h5 class="darkSection">Работа</h5>
 
 						<div class="resumeItem">
-							<div class="year">2017-</div>
-							<p><i>"Фриланс"</i> - <b>Верстка, наполнение сайтов. CMS</b></p>
+							<div class="year">2016-</div>
+							<p><i>"Фриланс"</i> - <b> Верстка сайтов из PSD в HTML - адаптивно и кроссбраузерно.</b></p>
+							<p>Фронтенд-технологии (HTML, CSS, jQuery)</p>
+							<p>Фреймворки (Bootstrap)</p>
+							<p>Пре/постпроцессинг CSS (Sass/SCSS)</p>
+							<p>Контроль версий через Git (GitHub)</p>
+							<p>Автоматизация сборки проектов (Gulp)</p>
 							<p><i>Достижения: </i> В портфолио представлены готовые проекты</p>
 						</div>
 
 						<div class="resumeItem">
 							<div class="year">2015-2017</div>
 							<p><i>"Аскона"</i> - <b>Управляющий магазина</b></p>
-							<p>Розничный магазин</p>
-							<p><i>Достижения: </i> Регулярное выполнение плановых показателей</p>
+							<p>Розничный магазин (партнерка)</p>
 						</div>
 
 						<div class="resumeItem">
 							<div class="year">2013-2014</div>
 							<p><i>OOO "Калибра"</i> - <b>Управляющий розничной сетью</b></p>
 							<p>Розничные магазины цифровой техники Samsung, Apple</p>
-							<p><i>Обязанности: </i> организация работы магазинов сети, определение приоритетов и очередности выполнения рабочих задач, обучение персонала технологиям продаж, оценка работы сотрудников, обратная связь, анализ и контроль товарооборота (документооборота) в торговых точках сети, сеть 15 магазинов, 8 из них регионы, расчет зарплаты сотрудникам магазинов, участие в открытии новых магазинов, формирование пакета необходимой документации и т.д.</p>
 						</div>
 
 						<div class="resumeItem">
 							<div class="year">2012-2013</div>
 							<p><i>OOO "Калибра"</i> - <b>Управляющий магазина (монобренд Samsung)</b></p>
 							<p>Розничный магазин цифровой техники.</p>
-							<p><i>Обязанности: </i> обучение сотрудников магазина, мониторинг и оптимизация цен, контроль отчетности магазина, коммуникации с арендодателями и отделами рекламы, онлайн тренинги по продажам техники Samsung, управление персоналом (в подчинении 4 сотрудника)</p>
-							<p><i>Достижения: </i> Eжемесячное выполнение плана продаж</p>
 						</div>
-
-						<div class="resumeItem">
-							<div class="year">2010-2012</div>
-							<p><i>OOO "Калибра"</i> - <b>Менеджер по продажам</b></p>
-							<p>Розничный магазин цифровой техники.</p>
-							<p><i>Обязанности: </i> Работа с базой 1С, консультации, кассир. Увеличение объемов продаж, инвентаризация. </p>
-						</div>
-
 						
 
 					</div>
 
 					<div class="col-md-6 right">
-						<h5 class="darkSection">Учеба</h5>
+						<h5 class="darkSection">Обучение</h5>
+						<div class="resumeItem">
+							<div class="year">2016-2017</div>
+							<p><i>Сертификаты</i> - 
+							<a href= "https://geekbrains.ru/certificates/128409" target="_blank">Основы Веб-дизайна</a>, <a href= "https://geekbrains.ru/certificates/133036" target="_blank">Основы программирования</a>, <a href= "https://geekbrains.ru/certificates/129754" target="_blank">Git. Быстрый старт</a>, <a href="http://netology.ru/sertificate/486448?p=1&stop=1" target="_blank" >Основы HTML и CSS</a>
+							</p>
+							<p><i>Тесты</i> - <a href="https://geekbrains.ru/certificates/110997" target="_blank">HTML и CSS</a></p>
+						</div>
+						<div class="resumeItem">
+							<div class="year">2016-по настоящее время</div>
+							<p><i>Курс в <a href="#htmlacademy" rel='m_PageScroll2id'>htmlacademy</a></i> - <b>html, css, javaScript</b></p>
+						</div>
+						<div class="resumeItem">
+							<div class="year">2016-по настоящее время</div>
+							<p><i>Курс в <a href="#javaScript" rel='m_PageScroll2id'>javaScript</a></i> - <b>javaScript</b></p>
+						</div>
 						<div class="resumeItem">
 							<div class="year">2008-2013</div>
 							<p><i>Московский институт государственного и корпоративного управления</i> - <b>Высшее</b></p>
@@ -331,100 +321,186 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="blokAcc">Портфолио</h3>
+					<h2 class="blokAcc">Портфолио</h2>
 					<p class="text-center lead">Мои работы. Изготовлены с помощью современных инструментов. Полностью адаптивны.<i>(Реальные проекты, плюс верстка макетов psd, которые  сверстал в качестве тренировок)</i></p>
-				</div>
-
-				<div class="col-md-6">
-					<ul class="controls">
-						<li class="control" data-filter="all">Все</li>
-						<li class="control" data-filter=".mobail">На мобильных</li>
-						<li class="control" data-filter=".desktop">Настольные</li>
-					</ul>
 				</div>
 			</div>
 				<hr>
-				<div class="mixContainer">
 					<!--cardsOneLine-->
-					<div class="row flexContainer">
+					<div class="row">
 						<!--card1-->
-						<div class="mix mobail">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/g/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>MedicineLux</h5>
+						<div class="col-md-3">
+
+						<article class="card">
+
+							<a class="popup-zoom" href="#acnostiaDesc">
+								<img src="img/-acnostia-.png" alt="образец сайта" class="img-responsive">
+							</a>
+
+							<form class="answers">
+								
+								<div id="acnostiaDesc" class="zoom-anim-dialog mfp-hide">
+									<h3 class="blokAcc">Сайт Acnostia десктоп версия</h3>
+									<img src="img/-acnostia-.png" alt="образец сайта" class="img-responsive">
+									<a href="https://1landlord.github.io/acnostia" class="popupLinks" target="_blank" alt="Сайт Acnostia">Посмотреть сайт
+									</a>
 								</div>
-							</div>
+
+							</form>
+						</article>
+							
 						</div><!--/card1-->
 						<!--card2-->
-						<div class="mix desktop">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>Matras-comfort</h5>
+						<div class="col-md-3">
+
+						<article class="card">
+
+							<a class="popup-zoom" href="#acnostiaMob">
+								<img src="img/-acnostia-mob.png" alt="мобильная версия" class="img-responsive">
+							</a>
+
+							<form class="answers">
+								
+								<div id="acnostiaMob" class="zoom-anim-dialog mfp-hide">
+									<h3 class="blokAcc">Сайт Acnostia мобильная версия</h3>
+									<img src="img/-acnostia-mob.png" alt="мобильная версия" class="img-responsive">
+									<a href="https://1landlord.github.io/acnostia" class="popupLinks" target="_blank" alt="Сайт Acnostia">Посмотреть сайт
+									</a>
 								</div>
-							</div>
+
+							</form>
+						</article>
+							
 						</div><!--/card2-->
 						<!--card3-->
-						<div class="mix desktop">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>Matras-comfort</h5>
-								</div>
-							</div>
+						<div class="col-md-3">
+
+							<article class="card">
+
+								<a class="popup-zoom" href="#BusinesTheme">
+									<img src="img/BusinesTheme.png" alt="пример сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="BusinesTheme" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Сайт бизнес тема десктоп версия</h3>
+										<img src="img/BusinesTheme.png" alt="Сайт бизнес тема" class="img-responsive">
+										<a href="https://1landlord.github.io/BusinesTheme/" class="popupLinks" target="_blank" alt="Сайт Acnostia">Посмотреть сайт
+									</a>
+									</div>
+
+								</form>
+							</article>
+							
 						</div><!--/card3-->
-						<!--card3-->
-						<div class="mix mobail">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>Matras-comfort</h5>
-								</div>
-							</div>
-						</div><!--/card3-->
+						<!--card4-->
+						<div class="col-md-3">
+
+						<article class="card">
+
+								<a class="popup-zoom" href="#BusinesThemeMob">
+									<img src="img/BusinesThemeMob.png" alt="пример сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="BusinesThemeMob" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Сайт бизнес тема мобильная версия</h3>
+										<img src="img/BusinesThemeMob.png" alt="Сайт бизнес тема, мобильная версия" class="img-responsive">
+										<a href="https://1landlord.github.io/BusinesTheme/" class="popupLinks" target="_blank" alt="Сайт Acnostia">Посмотреть сайт
+										</a>
+									</div>
+
+								</form>
+							</article>
+							
+						</div><!--/card4-->
 					</div><!--cardsOneLine end-->
 
 					<!--cardsTwoLine-->
-					<div class="row flexContainer">
+					<div class="row">
 						<!--card1-->
-						<div class="mix mobail">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>Acnostia</h5>
-								</div>
-							</div>
+						<div class="col-md-3">
+
+						<article class="card">
+
+								<a class="popup-zoom" href="#medicinelux">
+									<img src="img/medicinelux.png" alt="шаблон сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="medicinelux" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Медицинские расходные материалы опт, десктоп версия</h3>
+										<img src="img/medicinelux.png" alt="пример сайта" class="img-responsive">
+									</div>
+
+								</form>
+							</article>
+							
 						</div><!--/card1-->
 						<!--card2-->
-						<div class="mix desktop">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>SongBook</h5>
-								</div>
-							</div>
+						<div class="col-md-3">
+
+						<article class="card">
+
+								<a class="popup-zoom" href="#medicineluxMob">
+									<img src="img/medicineluxMob.png" alt="шаблон сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="medicineluxMob" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Медицинские расходные материалы опт, мобильная версия</h3>
+										<img src="img/medicineluxMob.png" alt="пример сайта" class="img-responsive">
+									</div>
+
+								</form>
+							</article>
+							
 						</div><!--/card2-->
 						<!--card3-->
-						<div class="mix desktop">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>SongBook</h5>
-								</div>
-							</div>
+						<div class="col-md-3">
+
+						<article class="card">
+
+								<a class="popup-zoom" href="#storeNuts">
+									<img src="img/storeNuts.png" alt="шаблон сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="storeNuts" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Интернет магазин StoreNuts на OpenCart, десктоп версия </h3>
+										<img src="img/storeNuts.png" alt="Интернет магазин StoreNuts десктоп версия" class="img-responsive">
+									</div>
+
+								</form>
+							</article>
+
 						</div><!--/card3-->
 						<!--card4-->
-						<div class="mix mobail">
-							<div class="thumbnail gallery">
-								<img src="https://unsplash.it/260/390" alt="..." class="img-responsive">
-								<div class="caption">
-									<h5>SongBook</h5>
-								</div>
-							</div>
+						<div class="col-md-3">
+
+						<article class="card">
+
+								<a class="popup-zoom" href="#storeNutsMob">
+									<img src="img/storeNutsMob.png" alt="шаблон сайта" class="img-responsive">
+								</a>
+
+								<form class="answers">
+									
+									<div id="storeNutsMob" class="zoom-anim-dialog mfp-hide">
+										<h3 class="blokAcc">Интернет магазин StoreNuts на OpenCart, мобильная версия</h3>
+										<img src="img/storeNutsMob.png" alt="Интернет магазин StoreNuts" class="img-responsive">
+									</div>
+
+								</form>
+							</article>
+							
 						</div><!--/card4-->
 					</div><!--cardsThoLine end-->
-				</div><!--mixContainer-->
 		</div>
 	</section><!--===Секция портфолио end====-->
 
@@ -434,1322 +510,1321 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h3 class="blokAcc">Навыки</h3>
+					<h2 class="blokAcc">Навыки</h2>
 				</div>
-				<p class="text-center lead">Инфографика навыков и сертификаты</p>
+				<p class="text-center lead">Инфографика навыков</p>
 
 			</div>
-		</div>
-	</section><!--===Секция skills end====-->
-	
-	<!--==============================Секция My path  ============================================-->
-	<section class="myPath">
-		<div class="container">
+
 			<div class="row">
+				
+				<p class="text-center">Блок в разработке!</p>
+
+			</div>
+
+			<!--============================== my way  ============================================-->
+		
+				<div class="row">
 				<div class="col-md-12">
-					<div class="panel-group" id="accordionPlus" role="tablist" aria-multiselectable="true">
-						<div class="panel panelHoverAccordion pathAccordionPanel">
-							<div class="panel-heading" role="tab" id="headPlus">
-								<div class="panel-title">
-									<p data-toggle="collapse" data-parent="#accordionPlus" href="#plus" aria-expanded="false" aria-controls="plus" class="collapsed accordionBlock">
-										+
-									</p>
+					<h2 class="blokAcc myWayLine">my way</h2>
+				</div>
+					<div class="col-md-12">
+						<ul class="timeline-both-side">
+				<!--==============================WebRef.ru==============================================-->
+				<li class="leftAffect">
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Ресурс webref.ru</h4>
+						<div class="panel-group" id="accordionRef" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionRef" href="#ref1" aria-expanded="false" aria-controls="ref1" class="collapsed accordionBlock">
+											Курсы
+										</p>
+									</div>
+								</div>
+								<div id="ref1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://webref.ru/course/introduction" target="_blank">Введение в Интернет</a>
+										<time class="pull-right">15.10.2016</time><br>
+										<a href="https://webref.ru/course/html5-form" target="_blank">Формы в HTML</a>
+										<time class="pull-right">19.10.2016</time><br>
+										<a href="https://webref.ru/course/css-advanced" target="_blank">Продвинутый CSS</a>
+										<time class="pull-right">02.12.2016</time><br>
+										<a href="https://webref.ru/course/positioning" target="_blank">Позиционирование в CSS</a>
+										<time class="pull-right">24.10.2016</time><br>
+										<a href="https://webref.ru/course/box-model" target="_blank">Блочная модель в CSS</a>
+										<time class="pull-right">31.01.2017</time><br>
+										<a href="https://webref.ru/course/css-text" target="_blank">Текст в CSS</a>
+										<time class="pull-right">21.10.2016</time><br>
+										<a href="https://webref.ru/course/css-basics" target="_blank">Основы CSS</a>
+										<time class="pull-right">23.01.2017</time><br>
+										<a href="https://webref.ru/course/html-content" target="_blank">Содержимое в HTML</a>
+										<time class="pull-right">22.10.2016</time><br>
+										<a href="https://webref.ru/course/html-basics" target="_blank">Основы HTML</a>
+										<time class="pull-right">19.10.2016</time><br>
+										<a href="https://webref.ru/course/sass" target="_blank">Основы Sass</a>
+										<time class="pull-right">26.03.2017</time><br>
+									</div>
 								</div>
 							</div>
-							<div id="plus" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headPlus" aria-expanded="false" style="height: 0px;">
-								<div class="panel-body">
-									<!--==============================Section timeline==============================================-->
-									<section>
-										<ul class="timeline-both-side">
-											<!--==============================WebRef.ru==============================================-->
-											<li class="leftAffect">
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Ресурс webref.ru</h4>
-													<div class="panel-group" id="accordionRef" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionRef" href="#ref1" aria-expanded="false" aria-controls="ref1" class="collapsed accordionBlock">
-																		Курсы
-																	</p>
-																</div>
-															</div>
-															<div id="ref1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://webref.ru/course/introduction" target="_blank">Введение в Интернет</a>
-																	<time class="pull-right">15.10.2016</time><br>
-																	<a href="https://webref.ru/course/html5-form" target="_blank">Формы в HTML</a>
-																	<time class="pull-right">19.10.2016</time><br>
-																	<a href="https://webref.ru/course/css-advanced" target="_blank">Продвинутый CSS</a>
-																	<time class="pull-right">02.12.2016</time><br>
-																	<a href="https://webref.ru/course/positioning" target="_blank">Позиционирование в CSS</a>
-																	<time class="pull-right">24.10.2016</time><br>
-																	<a href="https://webref.ru/course/box-model" target="_blank">Блочная модель в CSS</a>
-																	<time class="pull-right">31.01.2017</time><br>
-																	<a href="https://webref.ru/course/css-text" target="_blank">Текст в CSS</a>
-																	<time class="pull-right">21.10.2016</time><br>
-																	<a href="https://webref.ru/course/css-basics" target="_blank">Основы CSS</a>
-																	<time class="pull-right">23.01.2017</time><br>
-																	<a href="https://webref.ru/course/html-content" target="_blank">Содержимое в HTML</a>
-																	<time class="pull-right">22.10.2016</time><br>
-																	<a href="https://webref.ru/course/html-basics" target="_blank">Основы HTML</a>
-																	<time class="pull-right">19.10.2016</time><br>
-																	<a href="https://webref.ru/course/sass" target="_blank">Основы Sass</a>
-																	<time class="pull-right">26.03.2017</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingTwo">
-																<div class="panel-title">
-																	<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref2" aria-expanded="false" aria-controls="ref2">
-																		Верстка
-																	</p>
-																</div>
-															</div>
-															<div id="ref2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://webref.ru/layout/bootstrap" target="_blank">Bootstrap</a>
-																	<time class="pull-right">27.10.2016</time><br>
-																	<a href="https://webref.ru/layout/font-awesome" target="_blank">Font Awesome</a> <span>|</span>
-																	<a href="http://fontawesome.io/icons/" target="_blank">на Font Awesome</a> <span>|</span>
-																	<a href="http://fontello.com/" target="_blank">на Fontello</a>
-																	<time class="pull-right">27.10.2016</time><br>
-																	<a href="https://webref.ru/layout/html5-css3" target="_blank">HTML5 и CSS3 на примерах</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/layout/less" target="_blank">Less</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/layout/sass" target="_blank">Sass</a>
-																	<time class="pull-right">28.03.2017</time><br>
-																	<a href="https://webref.ru/layout/howtocodeinhtml" target="_blank">Как верстать на HTML5 и CSS3</a>
-																	<time class="pull-right">19.11.2016</time><br>
-																	<a href="https://webref.ru/layout/magic-of-css" target="_blank">Магия CSS</a>
-																	<time class="pull-right">22.11.2016</time><br>
-																	<a href="https://webref.ru/layout/diveintohtml5" target="_blank">Погружение в HTML5</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/layout/learn-html-css" target="_blank">Уроки по HTML и CSS</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/layout/advanced-html-css" target="_blank">Продвинутые уроки по HTML и CSS</a>
-																	<time class="pull-right">16.11.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref3" aria-expanded="false" aria-controls="ref3">
-																		Веб-технологии
-																	</p>
-																</div>
-															</div>
-															<div id="ref3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://webref.ru/dev/angular-cookbook" target="_blank">AngularJS. Рецепты программирования</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/bower-gulp-yeoman" target="_blank">Bower, Gulp и Yeoman</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/node-express-libsass" target="_blank">Node, Express и libsass: проект с нуля</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/automate-with-gulp" target="_blank">Автоматизация работы с Gulp</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/canvasdeepdive" target="_blank">Глубокое погружение в Canvas</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/learn-javascript" target="_blank">Знакомство с JavaScript</a>
-																	<time class="pull-right">13.01.2017</time><br>
-																	<a href="https://webref.ru/dev/jqfundamentals" target="_blank">Основы jQuery</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/grunt-getting-started" target="_blank">Приступая к работе с Grunt</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/building-with-gulp" target="_blank">Сборка с Gulp</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/first-node-app" target="_blank">Создание первого приложения на Node</a>
-																	<time class="pull-right">--.--.--</time><br>
-																	<a href="https://webref.ru/dev/building-jekyll-site" target="_blank">Создание сайта на Jekyll</a>
-																	<time class="pull-right">--.--.--</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref4" aria-expanded="false" aria-controls="ref4">
-																		Мобильные приложения
-																	</p>
-																</div>
-															</div>
-															<div id="ref4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>Lua</span><br>
-																	<span>Делаем приложение на Corona SDK</span><br>
-																	<span>Публикация приложений в Google Play</span><br>
-																	<span>Разработка для Firefox OS</span><br>
-																	<span>Создание игр для Firefox OS</span><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--==============================htmlacademia.ru========================================-->
-
-											<li class="opposite-side">
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">РЕСУРС HTMLACADEMIA</h4>
-													<div class="panel-group" id="accordionAcadem" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionAcadem" href="#academ1" aria-expanded="false" aria-controls="academ1" class="collapsed accordionBlock">
-																		HTML
-																	</p>
-																</div>
-															</div>
-															<div id="academ1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://htmlacademy.ru/courses/26" target="_blank">Структура HTML-документа</a>
-																	<time class="pull-right">19.06.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/38" target="_blank">Разметка текста</a>
-																	<time class="pull-right">21.06.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/40" target="_blank">Ссылки и изображения</a>
-																	<time class="pull-right">29.06.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/39" target="_blank">Знакомство с таблицами</a>
-																	<time class="pull-right">04.07.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/46" target="_blank">Знакомство с формами</a>
-																	<time class="pull-right">10.07.2016</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/73" target="_blank">Знакомство с HTML5</a>
-																	<time class="pull-right">03.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/74" target="_blank">Формы и HTML5</a>
-																	<time class="pull-right">10.01.2017</time><br>
-
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingTwo">
-																<div class="panel-title">
-																	<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionAcadem" href="#academ2" aria-expanded="false" aria-controls="academ2">
-																		CSS
-																	</p>
-																</div>
-															</div>
-															<div id="academ2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://htmlacademy.ru/courses/41">Знакомство с CSS</a>
-																	<time class="pull-right">16.11.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/42" target="_blank">Селекторы, часть 1</a>
-																	<time class="pull-right">18.11.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/66" target="_blank">Наследование и каскадирование</a>
-																	<time class="pull-right">17.10.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/53" target="_blank">Оформление текста, часть 1</a>
-																	<time class="pull-right">29.12.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/53" target="_blank">Фоны, часть 1</a>
-																	<time class="pull-right">30.12.2016</time><br>
-																	<a href="https://htmlacademy.ru/courses/44" target="_blank">Блочная модель документа</a>
-																	<time class="pull-right">24.02.2017</time><br>
-																	<a href="https://htmlacademy.ru/courses/65" target="_blank">Сетки</a>
-																	<time class="pull-right">25.02.2017</time><br>
-																	<a href="https://htmlacademy.ru/courses/45" target="_blank">Позиционирование</a>
-																	<time class="pull-right">25.02.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/57" target="_blank">Селекторы, часть 2</a>
-																	<time class="pull-right">04.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/58" target="_blank">Селекторы, часть 3</a>
-																	<time class="pull-right">05.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/51" target="_blank">Игра теней</a>
-																	<time class="pull-right">07.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/70" target="_blank">Линейные градиенты</a>
-																	<time class="pull-right">08.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/88" target="_blank">Рамки и фоны, часть 2</a>
-																	<time class="pull-right">06.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/84" target="_blank">Плавные переходы</a>
-																	<time class="pull-right">09.01.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/71" target="_blank">Двумерные трансформации</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/79" target="_blank">Оформление текста, часть 2</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/80" target="_blank">Анимация</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/86" target="_blank">Таблицы на CSS</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/97" target="_blank">Кекстаграм: Начало. CSS-фильтры</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/96" target="_blank">Флексбокс, часть 1</a>
-																	<time class="pull-right">14.03.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/113" target="_blank">Флексбокс, часть 2</a>
-																	<time class="pull-right">24.03.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/85" target="_blank">Знакомство с LESS</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/125" target="_blank">Примеси в LESS</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/130" target="_blank">Знакомство с SVG</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionAcadem" href="#academ3" aria-expanded="false" aria-controls="academ3">
-																		Мастерская
-																	</p>
-																</div>
-															</div>
-															<div id="academ3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://htmlacademy.ru/courses/50" target="_blank">Мастерская: создаём меню</a>
-																	<time class="pull-right">01.03.2017</time><br>
-																	<a href="https://htmlacademy.ru/courses/55" target="_blank">Мастерская: декоративные элементы</a>
-																	<time class="pull-right">03.03.2017</time><br>
-																	<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
-																	<a href="https://htmlacademy.ru/courses/76" target="_blank">Мастерская: декоративные эффекты на CSS3</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--==============================JavaScript.ru==========================================-->
-
-											<li>
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Ресурс JavaScript</h4>
-													<div class="panel-group" id="accordionJS" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionJS" href="#js1" aria-expanded="false" aria-controls="js1" class="collapsed accordionBlock">
-																		Основы JavaScript
-																	</p>
-																</div>
-															</div>
-															<div id="js1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/hello-world" target="_blank">Привет, мир!</a>
-																	<time class="pull-right">08.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/external-script" target="_blank">Внешние скрипты, порядок исполнения</a>
-																	<time class="pull-right">08.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/structure" target="_blank">Структура кода</a>
-																	<time class="pull-right">08.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/strict-mode" target="_blank">Современный стандарт, "use strict"</a>
-																	<time class="pull-right">09.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/variables" target="_blank">Переменные</a>
-																	<time class="pull-right">09.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/variable-names" target="_blank">Правильный выбор имени переменной</a>
-																	<time class="pull-right">11.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a>
-																	<time class="pull-right">13.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/operators" target="_blank">Основные операторы</a>
-																	<time class="pull-right">16.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/comparison" target="_blank">Операторы сравнения и логические значения</a>
-																	<time class="pull-right">17.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/bitwise-operators" target="_blank">Побитовые операторы</a>
-																	<time class="pull-right">19.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/uibasic" target="_blank">Взаимодействие с пользователем: alert, prompt, confirm</a>
-																	<time class="pull-right">19.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/ifelse" target="_blank">Условные операторы: if, '?'</a>
-																	<time class="pull-right">20.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/logical-ops" target="_blank">Логические операторы</a>
-																	<time class="pull-right">22.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/types-conversion" target="_blank">Преобразование типов для примитивов</a>
-																	<time class="pull-right">24.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/while-for" target="_blank">Циклы while, for</a>
-																	<time class="pull-right">30.11.2016</time><br>
-																	<a href="https://learn.javascript.ru/switch" target="_blank">Конструкция switch</a>
-																	<time class="pull-right">09.12.2016</time><br>
-																	<a href="https://learn.javascript.ru/function-basics" target="_blank">Функции</a>
-																	<time class="pull-right">13.12.2016</time><br>
-																	<a href="https://learn.javascript.ru/function-declaration-expression" target="_blank">Функциональные выражения</a>
-																	<time class="pull-right">14.12.2016</time><br>
-																	<a href="https://learn.javascript.ru/recursion" target="_blank">Рекурсия, стек</a>
-																	<time class="pull-right">16.12.2016</time><br>
-																	<a href="https://learn.javascript.ru/named-function-expression" target="_blank">Именованные функциональные выражения</a>
-																	<time class="pull-right">17.12.2016</time><br>
-																	<a href="https://learn.javascript.ru/javascript-specials" target="_blank">Всё вместе: особенности JavaScript</a>
-																	<time class="pull-right">19.12.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingTwo">
-																<div class="panel-title">
-																	<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js2" aria-expanded="false" aria-controls="js2">
-																		Качество кода
-																	</p>
-																</div>
-															</div>
-															<div id="js2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/debugging-chrome" target="_blank">Отладка в браузере Chrome</a>
-																	<time class="pull-right">11.01.2017</time><br>
-																	<a href="https://learn.javascript.ru/coding-style" target="_blank">Советы по стилю кода</a>
-																	<time class="pull-right">12.01.2017</time><br>
-																	<a href="https://learn.javascript.ru/write-unmain-code" target="_blank">Как писать неподдерживаемый код?</a>
-																	<time class="pull-right">13.01.2017</time><br>
-																	<a href="https://learn.javascript.ru/testing" target="_blank">Автоматические тесты при помощи chai и mocha</a>
-																	<time class="pull-right">15.01.2017</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js3" aria-expanded="false" aria-controls="js3">
-																		Структуры данных
-																	</p>
-																</div>
-															</div>
-															<div id="js3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/properties-and-methods" target="_blank">Введение в методы и свойства</a>
-																	<time class="pull-right">16.01.2017</time><br>
-																	<a href="https://learn.javascript.ru/number" target="_blank">Числа</a>
-																	<time class="pull-right">17.01.2017</time><br>
-																	<a href="https://learn.javascript.ru/string" target="_blank">Строки</a>
-																	<time class="pull-right">28.03.2017</time><br>
-																	<a href="https://learn.javascript.ru/object" target="_blank">Объекты как ассоциативные массивы</a>
-																	<time class="pull-right">29.03.2017</time><br>
-																	<a href="https://learn.javascript.ru/object-for-in" target="_blank">Объекты: перебор свойств</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/object-reference" target="_blank">Объекты: передача по ссылке</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/array" target="_blank">Массивы с числовыми индексами</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/arguments-pseudoarray" target="_blank">Псевдомассив аргументов "arguments"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/datetime" target="_blank">Дата и Время</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js4" aria-expanded="false" aria-controls="js4">
-																		Замыкания, область видимости
-																	</p>
-																</div>
-															</div>
-															<div id="js4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/global-object" target="_blank">Глобальный объект</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/closures" target="_blank">Замыкания, функции изнутри</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/scope-new-function" target="_blank">[[Scope]] для new Function</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/closures-usage" target="_blank">Локальные переменные для объекта</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/closures-module" target="_blank">Модули через замыкания</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/memory-management" target="_blank">Управление памятью в JavaScript</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/with" target="_blank">Устаревшая конструкция "with"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js5" aria-expanded="false" aria-controls="js5">
-																		Методы объектов и контекст вызова
-																	</p>
-																</div>
-															</div>
-															<div id="js5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/object-methods" target="_blank">Методы объектов, this</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/object-conversion" target="_blank">Преобразование объектов: toString и valueOf</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/constructor-new" target="_blank">Создание объектов через "new"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/descriptors-getters-setters" target="_blank">Дескрипторы, геттеры и сеттеры свойств</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/static-properties-and-methods" target="_blank">Статические и фабричные методы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/call-apply" target="_blank">Явное указание this: "call", "apply"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/bind" target="_blank">Привязка контекста и карринг: "bind"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/decorators" target="_blank">Функции-обёртки, декораторы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js6" aria-expanded="false" aria-controls="js6">
-																		Некоторые другие возможности
-																	</p>
-																</div>
-															</div>
-															<div id="js6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/class-instanceof" target="_blank">Типы данных: [[Class]], instanceof и утки</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/json" target="_blank">Формат JSON, метод toJSON</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/settimeout-setinterval" target="_blank">setTimeout и setInterval</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/eval" target="_blank">Запуск кода из строки: eval</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/exception" target="_blank">Перехват ошибок, "try..catc</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js7" aria-expanded="false" aria-controls="js7">
-																		ООП в функциональном стиле
-																	</p>
-																</div>
-															</div>
-															<div id="js7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/about-oop" target="_blank">Введение</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/internal-external-interface" target="_blank">Внутренний и внешний интерфейс</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/getters-setters" target="_blank">Геттеры и сеттеры</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/functional-inheritance" target="_blank">Функциональное наслед</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js8" aria-expanded="false" aria-controls="js8">
-																		ООП в прототипном стиле
-																	</p>
-																</div>
-															</div>
-															<div id="js8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/prototype" target="_blank">Прототип объекта</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/new-prototype" target="_blank">Свойство F.prototype и создание объектов через new</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/native-prototypes" target="_blank">Встроенные "классы" в JavaScript</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/classes" target="_blank">Свои классы на прототипах</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/class-inheritance" target="_blank">Наследование классов в JavaScript</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/instanceof" target="_blank">Проверка класса: "instanceof"</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/oop-errors" target="_blank">Свои ошибки, наследование от Error</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/mixins" target="_blank">Примеси</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js9" aria-expanded="false" aria-controls="js9">
-																		Современные возможности ES-2015
-																	</p>
-																</div>
-															</div>
-															<div id="js9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://learn.javascript.ru/es-modern-usage" target="_blank">ES-2015 сейчас</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/let-const" target="_blank">Переменные: let и const</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/destructuring" target="_blank">Деструктуризация</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/es-function" target="_blank">Функции</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/es-string" target="_blank">Строки</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/es-object" target="_blank">Объекты и прототипы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/es-class" target="_blank">Классы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/symbol" target="_blank">Тип данных Symbol</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/iterator" target="_blank">Итераторы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/set-map" target="_blank">Set, Map, WeakSet и WeakMap</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/promise" target="_blank">Promise</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/generator" target="_blank">Генераторы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/modules" target="_blank">Модули</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://learn.javascript.ru/proxy" target="_blank">Proxy</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--==============================Geekbrains=============================================-->
-
-											<li class="opposite-side">
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Ресурс Geekbrains</h4>
-													<div class="panel-group" id="accordionGeek" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionGeek" href="#geek" aria-expanded="false" aria-controls="geek" class="collapsed accordionBlock">
-																		Основы Веб-дизайна
-																	</p>
-																</div>
-															</div>
-															<div id="geek" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Особенности профессии "веб-дизайнер"</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Как создать сайт с хорошим дизайном?</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Создание дизайн-макета. Мастер-класс</span><br>
-																	<a class="btn btn-default" href= "https://geekbrains.ru/certificates/128409" target="_blank">Получен сертификат</a><time class="pull-right">30.10.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingTwo">
-																<div class="panel-title">
-																	<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek1" aria-expanded="false" aria-controls="geek1">
-																		Основы программирования
-																	</p>
-																</div>
-															</div>
-															<div id="geek1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Переменные, типы данных, ветвления</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Циклы; вёрстка сайта на HTML и CSS</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Разработка веб-сайта с играми; функции</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Выбор направления и языка программирования</span><br>
-																	<a class="btn btn-default" href= "https://geekbrains.ru/certificates/133036" target="_blank">Получен сертификат</a><time class="pull-right">08.11.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingTwo">
-																<div class="panel-title">
-																	<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek2" aria-expanded="false" aria-controls="geek2">
-																		Git. Быстрый старт
-																	</p>
-																</div>
-															</div>
-															<div id="geek2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Назначение и возможности</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Базовые операции</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Откат изменений кода</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Работа с ветками</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Конфликты</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Распространенные ошибки. Часть 1</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Распространенные ошибки. Часть 2</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Консольный git-клиент. Базовые операции</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Консольный git-клиент. Работа с ветками</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Работа с версиями программы</span><br>
-																	<a href="https://github.com/Pomechik" target="_blank">Мой <i class="fa fa-github" aria-hidden="true"></i></a><br>
-																	<a class="btn btn-default" href= "https://geekbrains.ru/certificates/129754" target="_blank">Получен сертификат</a><time class="pull-right">01.11.2016</time><br>
-
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek3" aria-expanded="false" aria-controls="geek3">
-																		Интенсив по разработке сайтов
-																	</p>
-																</div>
-															</div>
-															<div id="geek3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Дополнение к основам программирования</span><br>
-																	<a class="btn btn-default" href= "https://geekbrains.ru/certificates/133358" target="_blank">Получен сертификат</a><time class="pull-right">09.11.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek4" aria-expanded="false" aria-controls="geek4">
-																		Основы программирования, дополнение
-																	</p>
-																</div>
-															</div>
-															<div id="geek4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Дополнение к основам программирования, видеокурс</span><br>
-																	<a class="btn btn-default" href= "https://geekbrains.ru/certificates/136316#" target="_blank">Получен сертификат</a>
-																	<time class="pull-right">15.11.2016</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingThree">
-																<div class="panel-title">
-																	<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek5" aria-expanded="false" aria-controls="geek5">
-																		Веб-разработка. Быстрый старт
-																	</p>
-																</div>
-															</div>
-															<div id="geek5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Для чего нужен PHP</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Установка сервера на своем компьютере</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Как создавать веб-страницы</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Создаём макет нашего магазина</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Завершаем оформление шаблона</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Основы PHP</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Как хранить множество связанных данных</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Хранение и обработка связанных данныx</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Работаем с циклами</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Как сделать сайт живым</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Как делать навигацию между страницами</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Создаём каталог товаров</span><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Размещаем сайт в интернете</span><br>
-																	<a class="btn" href="#" target="_blank" disabled>Получен сертификат</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--==============================Html5book==============================================-->
-
-											<li>
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Ресурс Html5book</h4>
-													<div class="panel-group" id="accordion5book" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordion5book" href="#5book" aria-expanded="false" aria-controls="5book" class="collapsed accordionBlock">
-																		HTML
-																	</p>
-																</div>
-															</div>
-															<div id="5book" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a>Тема</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordion5book" href="#5book1" aria-expanded="false" aria-controls="5book1" class="collapsed accordionBlock">
-																		CSS
-																	</p>
-																</div>
-															</div>
-															<div id="5book1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://html5book.ru/osnovy-css/" target="_blank">Основы CSS</a>
-																	<time class="pull-right">01.02.2017</time><br>
-																	<a href="https://html5book.ru/block-inline-elements/" target="_blank">Блочные и строчные элементы</a>
-																	<time class="pull-right">02.02.2017</time><br>
-																	<a href="https://html5book.ru/css-position/" target="_blank">CSS позиционирование</a>
-																	<time class="pull-right">02.02.2017</time><br>
-																	<a href="https://html5book.ru/css-text/" target="_blank">CSS текст</a>
-																	<time class="pull-right">02.02.2017</time><br>
-																	<a href="https://html5book.ru/css-shrifty/" target="_blank">CSS шрифты</a>
-																	<time class="pull-right">03.02.2017</time><br>
-																	<a href="https://html5book.ru/styling-hyperlinks/" target="_blank">CSS ссылки</a>
-																	<time class="pull-right">03.02.2017</time><br>
-																	<a href="https://html5book.ru/css3-tables/" target="_blank">CSS таблицы</a>
-																	<time class="pull-right">03.02.2017</time><br>
-																	<a href="https://html5book.ru/generatory-css/" target="_blank">CSS генераторы</a>
-																	<time class="pull-right">04.02.2017</time><br>
-																	<a href="https://html5book.ru/css-spiski/" target="_blank">CSS списки</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css-background/" target="_blank">CSS фон</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css-border/" target="_blank">CSS рамка</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css-content/" target="_blank">CSS content</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css-colors/" target="_blank">CSS цвета</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-text/" target="_blank">CSS3 текст</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-gradient/" target="_blank">CSS3 градиент</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-borders/" target="_blank">CSS3 рамка</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-ten-teksta/" target="_blank">CSS3 тень текста</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-ten-bloka/" target="_blank">CSS3 тень блока</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-transition/" target="_blank">CSS3 переходы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-transform/" target="_blank">CSS3 трансформации</a>
-																	<time class="pull-right">27.01.2017</time><br>
-																	<a href="https://html5book.ru/css3-animation/" target="_blank">CSS3 анимация</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-flexbox/" target="_blank">CSS3 flexbox</a>
-																	<time class="pull-right">26.01.2017</time><br>
-																	<a href="https://html5book.ru/css3-columns/" target="_blank">CSS3 columns</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/3d-transform/" target="_blank">CSS3 3D трансформации</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-mediazaprosy/" target="_blank">CSS3 медиа запросы</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/css3-filtry/" target="_blank">CSS3 фильтры</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordion5book" href="#5book2" aria-expanded="false" aria-controls="5book2" class="collapsed accordionBlock">
-																		JS
-																	</p>
-																</div>
-															</div>
-															<div id="5book2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://html5book.ru/osnovy-javascript/" target="_blank">Основы JavaScript</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/vyrazheniya-v-javascript/" target="_blank">Выражения в JavaScript</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/vvedenie-v-jquery/" target="_blank">Введение в jQuery</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/metody-jquery/" target="_blank">Методы jQuery</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/sobytiya-jquery/" target="_blank">События jQuery</a>
-																	<time class="pull-right">-.-.-</time><br>
-																	<a href="https://html5book.ru/jquery-selectors/" target="_blank">Селекторы jQuery</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordion5book" href="#5book3" aria-expanded="false" aria-controls="5book3" class="collapsed accordionBlock">
-																		Типографика
-																	</p>
-																</div>
-															</div>
-															<div id="5book3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://html5book.ru/kakoj-shrift-mne-ispolzovat-pyat-principov-vybora-i-ispolzovaniya-shriftov/" target="_blank">Пять принципов выбора и использования шрифтов</a>
-																	<time class="pull-right">05.12.16</time><br>
-																	<a href="https://html5book.ru/shrift-dlya-sita/" target="_blank">Выбираем шрифт для сайта</a>
-																	<time class="pull-right">05.12.16</time><br>
-																	<a href="https://html5book.ru/pravila-veb-tipografiki/" target="_blank">Правила веб-типографики</a>
-																	<time class="pull-right">06.12.16</time><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--==============================itVDN==================================================-->
-
-											<li class="opposite-side">
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Ресурс itVDN</h4>
-													<div class="panel-group" id="accordionItvdn" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionItvdn" href="#Itvdn" aria-expanded="false" aria-controls="Itvdn" class="collapsed accordionBlock">
-																		HTML и CSS
-																	</p>
-																</div>
-															</div>
-															<div id="Itvdn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>Тест HTML и CSS на testprovider.com ID сертификата TP71686673</span><br>
-																	<a class="btn btn-default" href="http://testprovider.com/ru/cabinet/certificates" target="_blank">Получен сертификат</a>
-																	<time class="pull-right">10.02.2017</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionItvdn" href="#Itvdn1" aria-expanded="false" aria-controls="Itvdn1" class="collapsed accordionBlock">
-																		Тема
-																	</p>
-																</div>
-															</div>
-															<div id="Itvdn1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-
-																	<a href="#" target="_blank">Тема</a>
-																	<time class="pull-right">-.-.-</time><br>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--=============================Практика, проекты=======================================-->
-
-											<li>
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Мои проекты и практика</h4>
-													<div class="panel-group" id="accordionMyPractik" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Languages" aria-expanded="false" aria-controls="Languages" class="collapsed accordionBlock">
-																		Pands - практика позиционирования
-																	</p>
-																</div>
-															</div>
-															<div id="Languages" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>Позиционирование блоков</span>
-																	<time class="pull-right">17/18/20.09.2016</time><br>
-																	<span>Позиционирование блоков</span>
-																	<time class="pull-right">21/23.09.2016</time><br>
-																	<span>Позиционирование блоков</span>
-																	<time class="pull-right">01.10.2016</time><br>
-																	<a href="https://1landlord.github.io/pands/" target="_blank">Ссылка на работу</a>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 100%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#SongbookMD" aria-expanded="false" aria-controls="SongbookMD" class="collapsed accordionBlock">
-																		Acnostia - практика из PSD
-																	</p>
-																</div>
-															</div>
-															<div id="SongbookMD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<p>Для практики нашел в интернете безплатный шаблон PSD, верстал на Bootstrap3 + Flexbox + Adobe assets</p>
-																	<span>Борьба с Full screen carousel</span>
-																	<time class="pull-right">23/24.01.2017</time><br>
-																	<span>Борьба с Flexbox</span>
-																	<time class="pull-right">25/26.01.2017</time><br>
-																	<span>Верстка</span>
-																	<time class="pull-right">27/28.01.2017</time><br>
-																	<span>Адаптация под разные экраны</span>
-																	<time class="pull-right">03/04/06.02.2017</time><br>
-																	<span>Заливка на Github</span>
-																	<time class="pull-right">07.02.2017</time><br>
-																	<a href="https://adobe.ly/2lfvQrz" target="_blank">Ссылка на шаблон PSD</a><br>
-																	<a href="https://1landlord.github.io/acnostia" target="_blank">Ссылка на работу</a>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 100%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#medicineLux" aria-expanded="false" aria-controls="medicineLux" class="collapsed accordionBlock">
-																		CMS Wix - практика
-																	</p>
-																</div>
-															</div>
-															<div id="medicineLux" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>Срочный заказ на сайт</span>
-																	<time class="pull-right">14.02.2017</time><br>
-																	<span>Наполнение сайта контентом</span>
-																	<time class="pull-right">14/15/16.02.2017</time><br>
-																	<span>Дизайн на коленке, адаптивность</span>
-																	<time class="pull-right">17/18.02.2017</time><br>
-																	<span>Заказ SEO(база)</span>
-																	<time class="pull-right">22.02.2017</time><br>
-																	<span>Формирование чек листа</span><a class="pull-right" href="https://www.evernote.com/shard/s134/sh/cfb5dbd5-4ded-4d44-bb6e-aafb132df643/fd8b8449cd4d251a012d13d0a7fc65cf" target="_blank"><img class="forEvernote" src="img/evernote.png" alt="evernote"></a><br>
-																	<a href="http://www.medicinelux.com/" target="_blank">Ссылка на работу</a>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 100%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Songbook" aria-expanded="false" aria-controls="Songbook" class="collapsed accordionBlock">
-																		Songbook
-																	</p>
-																</div>
-															</div>
-															<div id="Songbook" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>background адаптивный </span>
-																	<time class="pull-right">10.11.2016</time><br>
-																	<span>@media запросы </span>
-																	<time class="pull-right">11.11.2016</time><br>
-																	<span>transition CSS </span>
-																	<time class="pull-right">11.11.2016</time><br>
-																	<span>Адаптивное меню </span>
-																	<time class="pull-right">12.11.2016</time><br>
-																	<span>Подготовка фона в Фотошоп, сканы</span>
-																	<time class="pull-right">24.11.2016</time><br>
-																	<span>Подготовка фона в Фотошоп, сканы</span>
-																	<time class="pull-right">06.12.2016</time><br>
-																	<a href="../../projects/songbook/index.html" target="_blank">Ссылка на работу</a>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 30%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Frontend" aria-expanded="false" aria-controls="Frontend" class="collapsed accordionBlock">
-																		К Frontend
-																	</p>
-																</div>
-															</div>
-															<div id="Frontend" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<span>Переработка главной страницы</span>
-																	<time class="pull-right">21.11.2016</time><br>
-																	<span>Добавление footer с прогрессами</span>
-																	<time class="pull-right">21.11.2016</time><br>
-																	<span>Страница для ресурса webref</span>
-																	<time class="pull-right">21.11.2016</time><br>
-																	<span>Настройка дизайна</span>
-																	<time class="pull-right">21.11.2016</time><br>
-																	<span>Настройка footer</span>
-																	<time class="pull-right">22.11.2016</time><br>
-																	<span>Настройка footer, оптимизация Css</span>
-																	<time class="pull-right">23.11.2016</time><br>
-																	<span>Реализация accordion, главная</span>
-																	<time class="pull-right">24.11.2016</time><br>
-																	<span>Наполнение сайта данными</span>
-																	<time class="pull-right">25.11.2016</time><br>
-																	<span>Реализация accordion, вторые уровни</span>
-																	<time class="pull-right">28.11.2016</time><br>
-																	<span>Форма обратной связи на <a href="http://webdesign-master.ru/blog/javascript/14.html" target="_blank">Ajax</a></span>
-																	<time class="pull-right">29.11.2016</time><br>
-																	<span>Анимация и градиенты</span>
-																	<time class="pull-right">01.12.2016</time><br>
-																	<span>Проработка меню и стр. ref</span>
-																	<time class="pull-right">02.12.2016</time><br>
-																	<span>Подключение Bootstrap3</span>
-																	<time class="pull-right">30.12.2016</time><br>
-																	<span>Главная на Bootstrap</span>
-																	<time class="pull-right">10/11/12.01.2017</time><br>
-																	<span>Дизайн подвал</span>
-																	<time class="pull-right">13/14.01.2017</time><br>
-																	<span>Настройка на Bootstrap</span>
-																	<time class="pull-right">15/18.01.2017</time><br>
-																	<span>Переработка accordion</span>
-																	<time class="pull-right">16/17.01.2017</time><br>
-																	<span>Адаптация под разные разрешения</span>
-																	<time class="pull-right">19.01.2017</time><br>
-																	<span>Выложил сайт на GitHubPage</span>
-																	<time class="pull-right">20.01.2017</time><br>
-																	<span>Мелкие правки</span>
-																	<time class="pull-right">22/23.01.2017</time><br>
-																	<span>Добавил animate.css</span>
-																	<time class="pull-right">09.02.2017</time><br>
-																	<span>Redesign</span>
-																	<time class="pull-right">15-24.03.2017</time><br>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 85%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#fotocollage" aria-expanded="false" aria-controls="fotocollage" class="collapsed accordionBlock">
-																		Сайт коллаж фото семья<i class="fa fa-address-card-o rightP" aria-hidden="true"></i>
-																	</p>
-																</div>
-															</div>
-															<div id="fotocollage" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>1</span>
-																	<time class="pull-right">-.-.-</time><br>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 1%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#familyTree" aria-expanded="false" aria-controls="familyTree" class="collapsed accordionBlock">
-																		Сайт Семейное дерево<i class="fa fa-address-card-o rightP" aria-hidden="true"></i>
-																	</p>
-																</div>
-															</div>
-															<div id="familyTree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>1</span>
-																	<time class="pull-right">-.-.-</time><br>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 1%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-
-											<!--=============================Разное==================================================-->
-
-											<li class="opposite-side">
-												<div class="border-line"></div>
-												<article class="timeline-description">
-													<h4 class="blokAcc">Разные интересности</h4>
-													<div class="panel-group" id="accordionDifferent" role="tablist" aria-multiselectable="true">
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionDifferent" href="#books" aria-expanded="false" aria-controls="books" class="collapsed accordionBlock">
-																		Книги
-																	</p>
-																</div>
-															</div>
-															<div id="books" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<input type="checkbox">
-																	<cite>Секреты CSS</cite><small class="pull-right">автор Леа Веру</small><br>
-																	<span>Практика по книге</span><br>
-																	<span>Адаптивные кнопки</span>
-																	<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Полупрозрачные рамки</span>
-																	<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Внутренее скругление</span>
-																	<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Гибкие эллипсы</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Параллелограммы</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Изображения в форме ромба</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Срезанные углы</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Вкладки в форме трапеций</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Простые секторные диаграммы</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Тени</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																	<span>Цветовой тон</span>
-																	<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionDifferent" href="#habr" aria-expanded="false" aria-controls="habr" class="collapsed accordionBlock">
-																		Habrahabr
-																	</p>
-																</div>
-															</div>
-															<div id="habr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<a href="https://habrahabr.ru/post/154319/" target="_blank">Популярно о псевдоэлементах :Before и :After</a>
-																	<time class="pull-right">27.10.2016</time><br>
-																	<a href="https://habrahabr.ru/post/141658/#_=_" target="_blank">Все о свойстве border</a>
-																	<time class="pull-right">22.11.2016</time><br>
-																	<a href="https://habrahabr.ru/post/189766/#_=_" target="_blank">Теория цвета в цифрах</a>
-																	<time class="pull-right">прочитать</time><br>
-																	<a href="https://peredelka.wordpress.com/2013/10/29/%D0%BE-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B5-%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B8%D1%82%D0%BC%D0%B0/" target="_blank">О верстке вертикального ритма</a>
-																	<time class="pull-right">прочитать</time><br>
-																	<a href="https://habrahabr.ru/post/189118/" target="_blank">Проблемы CSS. Часть 1</a>
-																	<time class="pull-right">прочитать</time><br>
-																	<a href="https://habrahabr.ru/post/189252/" target="_blank">Проблемы CSS. Часть 2</a>
-																	<time class="pull-right">15.01.2017</time><br>
-																	<a href="https://habrahabr.ru/post/313938/#first_unread" target="_blank">Шпаргалка по Flexbox</a>
-																	<a href="http://codepen.io/Landlord/pen/qRKeYP" target="_blank"> + <i class="fa fa-codepen" aria-hidden="true"></i></a>
-																	<time class="pull-right">06.02.2017</time><br>
-																	<a href="https://habrahabr.ru/post/257253/" target="_blank">Строим с Flexbox</a>
-																	<time class="pull-right">06.02.2017</time><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionDifferent" href="#interest2" aria-expanded="false" aria-controls="interest2" class="collapsed accordionBlock">
-																		Сокращения
-																	</p>
-																</div>
-															</div>
-															<div id="interest2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<h5 class="text-info">Свойство background</h5><br>
-																	<span>background: [bc] [bi] [br] [bp] [ba];</span><br>
-																	<span>Обозначения:</span><br>
-																	<span>[bc] — background-color</span><br>
-																	<span>[bi] — background-image</span><br>
-																	<span>[br] — background-repeat</span><br>
-																	<span>[bp] — background-position</span><br>
-																	<span>[ba] — background-attachment</span><br>
-																	<span>Пример:<code>background: #7f8c8c url("avatar.png") no-repeat 50% 50%;</code>без [ba]</span>
-																	<h5 class="text-info">Смещение тени</h5><br>
-																	<span>box-shadow:</span><br>
-																	<span>[inset] - внутренняя</span><br>
-																	<span>+- 5px  - смещение по x</span><br>
-																	<span>+- 5px  - смещение по y</span><br>
-																	<span>[2px]   - размытие</span><br>
-																	<span>[3px]   - растяжение</span><br>
-																	<span>[red];  - цвет</span><br>
-																	<span>размытие есть, растяжение отрицательное — тень очень светлая;</span><br>
-																	<span>размытие есть, растяжения нет — тень обычная;</span><br>
-																	<span>размытие больше растяжения — тень темнее обычного;</span><br>
-																	<span>размытие меньше растяжения — тень очень темная.</span><br>
-																	<h5 class="text-info">Параметры перехода перечисляются через пробел:</h5><br>
-																	<span>свойство, длительность, форма и задержка:</span><br>
-																	<span>Пример:<code>transition: width 1s ease-in 2s;</code></span><br>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionDifferent" href="#seo" aria-expanded="false" aria-controls="seo" class="collapsed accordionBlock">
-																		SEO
-																	</p>
-																</div>
-															</div>
-															<div id="seo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<h5>Searh console Веб-мастеру</h5>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Модуль 1. Как создать интересный сайт</span>
-																	<time class="pull-right">25.10.2016</time><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Модуль 2. Как Google обрабатывает ваш сайт</span>
-																	<time class="pull-right">-.-.-</time><br>
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Модуль 3. Воспользуйтесь нашими ресурсами</span>
-																	<time class="pull-right">-.-.-</time><br>
-																	<p><a href="https://support.google.com/webmasters/answer/6001095?hl=ru&ref_topic=4631146" target="_blank">ссылка</a></p>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 3%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="panel panelHoverAccordion">
-															<div class="panel-heading" role="tab" id="headingOne">
-																<div class="panel-title">
-																	<p data-toggle="collapse" data-parent="#accordionDifferent" href="#PhotoShop" aria-expanded="false" aria-controls="PhotoShop" class="collapsed accordionBlock">
-																		PhotoShop
-																	</p>
-																</div>
-															</div>
-															<div id="PhotoShop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-																<div class="panel-body">
-																	<i class="fa fa-check-square-o" aria-hidden="true"></i>
-																	<span>Курсы PhotoShop Зинаиды Лукьяновой</span>
-																	<time class="pull-right">-.-.-</time><br>
-																	<div class="progress progress-striped active">
-																		<div class="progress-bar" style="width: 3%"></div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</article>
-											</li>
-										</ul>
-									</section><!--===Section timeline end===-->
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref2" aria-expanded="false" aria-controls="ref2">
+											Верстка
+										</p>
+									</div>
+								</div>
+								<div id="ref2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://webref.ru/layout/bootstrap" target="_blank">Bootstrap</a>
+										<time class="pull-right">27.10.2016</time><br>
+										<a href="https://webref.ru/layout/font-awesome" target="_blank">Font Awesome</a> <span>|</span>
+										<a href="http://fontawesome.io/icons/" target="_blank">на Font Awesome</a> <span>|</span>
+										<a href="http://fontello.com/" target="_blank">на Fontello</a>
+										<time class="pull-right">27.10.2016</time><br>
+										<a href="https://webref.ru/layout/html5-css3" target="_blank">HTML5 и CSS3 на примерах</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/layout/less" target="_blank">Less</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/layout/sass" target="_blank">Sass</a>
+										<time class="pull-right">28.03.2017</time><br>
+										<a href="https://webref.ru/layout/howtocodeinhtml" target="_blank">Как верстать на HTML5 и CSS3</a>
+										<time class="pull-right">19.11.2016</time><br>
+										<a href="https://webref.ru/layout/magic-of-css" target="_blank">Магия CSS</a>
+										<time class="pull-right">22.11.2016</time><br>
+										<a href="https://webref.ru/layout/diveintohtml5" target="_blank">Погружение в HTML5</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/layout/learn-html-css" target="_blank">Уроки по HTML и CSS</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/layout/advanced-html-css" target="_blank">Продвинутые уроки по HTML и CSS</a>
+										<time class="pull-right">16.11.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref3" aria-expanded="false" aria-controls="ref3">
+											Веб-технологии
+										</p>
+									</div>
+								</div>
+								<div id="ref3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://webref.ru/dev/angular-cookbook" target="_blank">AngularJS. Рецепты программирования</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/bower-gulp-yeoman" target="_blank">Bower, Gulp и Yeoman</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/node-express-libsass" target="_blank">Node, Express и libsass: проект с нуля</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/automate-with-gulp" target="_blank">Автоматизация работы с Gulp</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/canvasdeepdive" target="_blank">Глубокое погружение в Canvas</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/learn-javascript" target="_blank">Знакомство с JavaScript</a>
+										<time class="pull-right">13.01.2017</time><br>
+										<a href="https://webref.ru/dev/jqfundamentals" target="_blank">Основы jQuery</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/grunt-getting-started" target="_blank">Приступая к работе с Grunt</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/building-with-gulp" target="_blank">Сборка с Gulp</a>
+										<time class="pull-right">05.04.2017</time><br>
+										<a href="https://webref.ru/dev/first-node-app" target="_blank">Создание первого приложения на Node</a>
+										<time class="pull-right">--.--.--</time><br>
+										<a href="https://webref.ru/dev/building-jekyll-site" target="_blank">Создание сайта на Jekyll</a>
+										<time class="pull-right">--.--.--</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionRef" href="#ref4" aria-expanded="false" aria-controls="ref4">
+											Мобильные приложения
+										</p>
+									</div>
+								</div>
+								<div id="ref4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Lua</span><br>
+										<span>Делаем приложение на Corona SDK</span><br>
+										<span>Публикация приложений в Google Play</span><br>
+										<span>Разработка для Firefox OS</span><br>
+										<span>Создание игр для Firefox OS</span><br>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</article>
+				</li>
+
+				<!--==============================htmlacademia.ru========================================-->
+				
+				<li class="opposite-side">
+					<div id="htmlacademy"></div>
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">РЕСУРС HTMLACADEMIA</h4>
+						<div class="panel-group" id="accordionAcadem" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionAcadem" href="#academ1" aria-expanded="false" aria-controls="academ1" class="collapsed accordionBlock">
+											HTML
+										</p>
+									</div>
+								</div>
+								<div id="academ1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://htmlacademy.ru/courses/26" target="_blank">Структура HTML-документа</a>
+										<time class="pull-right">19.06.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/38" target="_blank">Разметка текста</a>
+										<time class="pull-right">21.06.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/40" target="_blank">Ссылки и изображения</a>
+										<time class="pull-right">29.06.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/39" target="_blank">Знакомство с таблицами</a>
+										<time class="pull-right">04.07.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/46" target="_blank">Знакомство с формами</a>
+										<time class="pull-right">10.07.2016</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/73" target="_blank">Знакомство с HTML5</a>
+										<time class="pull-right">03.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/74" target="_blank">Формы и HTML5</a>
+										<time class="pull-right">10.01.2017</time><br>
+
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionAcadem" href="#academ2" aria-expanded="false" aria-controls="academ2">
+											CSS
+										</p>
+									</div>
+								</div>
+								<div id="academ2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://htmlacademy.ru/courses/41">Знакомство с CSS</a>
+										<time class="pull-right">16.11.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/42" target="_blank">Селекторы, часть 1</a>
+										<time class="pull-right">18.11.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/66" target="_blank">Наследование и каскадирование</a>
+										<time class="pull-right">17.10.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/53" target="_blank">Оформление текста, часть 1</a>
+										<time class="pull-right">29.12.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/53" target="_blank">Фоны, часть 1</a>
+										<time class="pull-right">30.12.2016</time><br>
+										<a href="https://htmlacademy.ru/courses/44" target="_blank">Блочная модель документа</a>
+										<time class="pull-right">24.02.2017</time><br>
+										<a href="https://htmlacademy.ru/courses/65" target="_blank">Сетки</a>
+										<time class="pull-right">25.02.2017</time><br>
+										<a href="https://htmlacademy.ru/courses/45" target="_blank">Позиционирование</a>
+										<time class="pull-right">25.02.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/57" target="_blank">Селекторы, часть 2</a>
+										<time class="pull-right">04.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/58" target="_blank">Селекторы, часть 3</a>
+										<time class="pull-right">05.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/51" target="_blank">Игра теней</a>
+										<time class="pull-right">07.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/70" target="_blank">Линейные градиенты</a>
+										<time class="pull-right">08.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/88" target="_blank">Рамки и фоны, часть 2</a>
+										<time class="pull-right">06.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/84" target="_blank">Плавные переходы</a>
+										<time class="pull-right">09.01.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/71" target="_blank">Двумерные трансформации</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/79" target="_blank">Оформление текста, часть 2</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/80" target="_blank">Анимация</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/86" target="_blank">Таблицы на CSS</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/97" target="_blank">Кекстаграм: Начало. CSS-фильтры</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/96" target="_blank">Флексбокс, часть 1</a>
+										<time class="pull-right">14.03.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/113" target="_blank">Флексбокс, часть 2</a>
+										<time class="pull-right">24.03.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/85" target="_blank">Знакомство с LESS</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/125" target="_blank">Примеси в LESS</a>
+										<time class="pull-right">-.-.-</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/130" target="_blank">Знакомство с SVG</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionAcadem" href="#academ3" aria-expanded="false" aria-controls="academ3">
+											Мастерская
+										</p>
+									</div>
+								</div>
+								<div id="academ3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://htmlacademy.ru/courses/50" target="_blank">Мастерская: создаём меню</a>
+										<time class="pull-right">01.03.2017</time><br>
+										<a href="https://htmlacademy.ru/courses/55" target="_blank">Мастерская: декоративные элементы</a>
+										<time class="pull-right">03.03.2017</time><br>
+										<i title="Платный контент" class="fa fa-rub" aria-hidden="true"></i>
+										<a href="https://htmlacademy.ru/courses/76" target="_blank">Мастерская: декоративные эффекты на CSS3</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--==============================JavaScript.ru==========================================-->
+
+				<li>
+					<div id="javaScript"></div>
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Ресурс JavaScript</h4>
+						<div class="panel-group" id="accordionJS" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionJS" href="#js1" aria-expanded="false" aria-controls="js1" class="collapsed accordionBlock">
+											Основы JavaScript
+										</p>
+									</div>
+								</div>
+								<div id="js1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/hello-world" target="_blank">Привет, мир!</a>
+										<time class="pull-right">08.11.2016</time><br>
+										<a href="https://learn.javascript.ru/external-script" target="_blank">Внешние скрипты, порядок исполнения</a>
+										<time class="pull-right">08.11.2016</time><br>
+										<a href="https://learn.javascript.ru/structure" target="_blank">Структура кода</a>
+										<time class="pull-right">08.11.2016</time><br>
+										<a href="https://learn.javascript.ru/strict-mode" target="_blank">Современный стандарт, "use strict"</a>
+										<time class="pull-right">09.11.2016</time><br>
+										<a href="https://learn.javascript.ru/variables" target="_blank">Переменные</a>
+										<time class="pull-right">09.11.2016</time><br>
+										<a href="https://learn.javascript.ru/variable-names" target="_blank">Правильный выбор имени переменной</a>
+										<time class="pull-right">11.11.2016</time><br>
+										<a href="https://learn.javascript.ru/types-intro" target="_blank">Шесть типов данных, typeof</a>
+										<time class="pull-right">13.11.2016</time><br>
+										<a href="https://learn.javascript.ru/operators" target="_blank">Основные операторы</a>
+										<time class="pull-right">16.11.2016</time><br>
+										<a href="https://learn.javascript.ru/comparison" target="_blank">Операторы сравнения и логические значения</a>
+										<time class="pull-right">17.11.2016</time><br>
+										<a href="https://learn.javascript.ru/bitwise-operators" target="_blank">Побитовые операторы</a>
+										<time class="pull-right">19.11.2016</time><br>
+										<a href="https://learn.javascript.ru/uibasic" target="_blank">Взаимодействие с пользователем: alert, prompt, confirm</a>
+										<time class="pull-right">19.11.2016</time><br>
+										<a href="https://learn.javascript.ru/ifelse" target="_blank">Условные операторы: if, '?'</a>
+										<time class="pull-right">20.11.2016</time><br>
+										<a href="https://learn.javascript.ru/logical-ops" target="_blank">Логические операторы</a>
+										<time class="pull-right">22.11.2016</time><br>
+										<a href="https://learn.javascript.ru/types-conversion" target="_blank">Преобразование типов для примитивов</a>
+										<time class="pull-right">24.11.2016</time><br>
+										<a href="https://learn.javascript.ru/while-for" target="_blank">Циклы while, for</a>
+										<time class="pull-right">30.11.2016</time><br>
+										<a href="https://learn.javascript.ru/switch" target="_blank">Конструкция switch</a>
+										<time class="pull-right">09.12.2016</time><br>
+										<a href="https://learn.javascript.ru/function-basics" target="_blank">Функции</a>
+										<time class="pull-right">13.12.2016</time><br>
+										<a href="https://learn.javascript.ru/function-declaration-expression" target="_blank">Функциональные выражения</a>
+										<time class="pull-right">14.12.2016</time><br>
+										<a href="https://learn.javascript.ru/recursion" target="_blank">Рекурсия, стек</a>
+										<time class="pull-right">16.12.2016</time><br>
+										<a href="https://learn.javascript.ru/named-function-expression" target="_blank">Именованные функциональные выражения</a>
+										<time class="pull-right">17.12.2016</time><br>
+										<a href="https://learn.javascript.ru/javascript-specials" target="_blank">Всё вместе: особенности JavaScript</a>
+										<time class="pull-right">19.12.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js2" aria-expanded="false" aria-controls="js2">
+											Качество кода
+										</p>
+									</div>
+								</div>
+								<div id="js2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/debugging-chrome" target="_blank">Отладка в браузере Chrome</a>
+										<time class="pull-right">11.01.2017</time><br>
+										<a href="https://learn.javascript.ru/coding-style" target="_blank">Советы по стилю кода</a>
+										<time class="pull-right">12.01.2017</time><br>
+										<a href="https://learn.javascript.ru/write-unmain-code" target="_blank">Как писать неподдерживаемый код?</a>
+										<time class="pull-right">13.01.2017</time><br>
+										<a href="https://learn.javascript.ru/testing" target="_blank">Автоматические тесты при помощи chai и mocha</a>
+										<time class="pull-right">15.01.2017</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js3" aria-expanded="false" aria-controls="js3">
+											Структуры данных
+										</p>
+									</div>
+								</div>
+								<div id="js3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/properties-and-methods" target="_blank">Введение в методы и свойства</a>
+										<time class="pull-right">16.01.2017</time><br>
+										<a href="https://learn.javascript.ru/number" target="_blank">Числа</a>
+										<time class="pull-right">17.01.2017</time><br>
+										<a href="https://learn.javascript.ru/string" target="_blank">Строки</a>
+										<time class="pull-right">28.03.2017</time><br>
+										<a href="https://learn.javascript.ru/object" target="_blank">Объекты как ассоциативные массивы</a>
+										<time class="pull-right">29.03.2017</time><br>
+										<a href="https://learn.javascript.ru/object-for-in" target="_blank">Объекты: перебор свойств</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/object-reference" target="_blank">Объекты: передача по ссылке</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/array" target="_blank">Массивы с числовыми индексами</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/array-methods" target="_blank">Массивы: методы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/array-iteration" target="_blank">Массив: перебирающие методы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/arguments-pseudoarray" target="_blank">Псевдомассив аргументов "arguments"</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/datetime" target="_blank">Дата и Время</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js4" aria-expanded="false" aria-controls="js4">
+											Замыкания, область видимости
+										</p>
+									</div>
+								</div>
+								<div id="js4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/global-object" target="_blank">Глобальный объект</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/closures" target="_blank">Замыкания, функции изнутри</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/scope-new-function" target="_blank">[[Scope]] для new Function</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/closures-usage" target="_blank">Локальные переменные для объекта</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/closures-module" target="_blank">Модули через замыкания</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/memory-management" target="_blank">Управление памятью в JavaScript</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/with" target="_blank">Устаревшая конструкция "with"</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js5" aria-expanded="false" aria-controls="js5">
+											Методы объектов и контекст вызова
+										</p>
+									</div>
+								</div>
+								<div id="js5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/object-methods" target="_blank">Методы объектов, this</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/object-conversion" target="_blank">Преобразование объектов: toString и valueOf</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/constructor-new" target="_blank">Создание объектов через "new"</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/descriptors-getters-setters" target="_blank">Дескрипторы, геттеры и сеттеры свойств</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/static-properties-and-methods" target="_blank">Статические и фабричные методы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/call-apply" target="_blank">Явное указание this: "call", "apply"</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/bind" target="_blank">Привязка контекста и карринг: "bind"</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/decorators" target="_blank">Функции-обёртки, декораторы</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js6" aria-expanded="false" aria-controls="js6">
+											Некоторые другие возможности
+										</p>
+									</div>
+								</div>
+								<div id="js6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/class-instanceof" target="_blank">Типы данных: [[Class]], instanceof и утки</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/json" target="_blank">Формат JSON, метод toJSON</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/settimeout-setinterval" target="_blank">setTimeout и setInterval</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/eval" target="_blank">Запуск кода из строки: eval</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/exception" target="_blank">Перехват ошибок, "try..catc</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js7" aria-expanded="false" aria-controls="js7">
+											ООП в функциональном стиле
+										</p>
+									</div>
+								</div>
+								<div id="js7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/about-oop" target="_blank">Введение</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/internal-external-interface" target="_blank">Внутренний и внешний интерфейс</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/getters-setters" target="_blank">Геттеры и сеттеры</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/functional-inheritance" target="_blank">Функциональное наслед</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js8" aria-expanded="false" aria-controls="js8">
+											ООП в прототипном стиле
+										</p>
+									</div>
+								</div>
+								<div id="js8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/prototype" target="_blank">Прототип объекта</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/new-prototype" target="_blank">Свойство F.prototype и создание объектов через new</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/native-prototypes" target="_blank">Встроенные "классы" в JavaScript</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/classes" target="_blank">Свои классы на прототипах</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/class-inheritance" target="_blank">Наследование классов в JavaScript</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/instanceof" target="_blank">Проверка класса: "instanceof"</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/oop-errors" target="_blank">Свои ошибки, наследование от Error</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/mixins" target="_blank">Примеси</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionJS" href="#js9" aria-expanded="false" aria-controls="js9">
+											Современные возможности ES-2015
+										</p>
+									</div>
+								</div>
+								<div id="js9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://learn.javascript.ru/es-modern-usage" target="_blank">ES-2015 сейчас</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/let-const" target="_blank">Переменные: let и const</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/destructuring" target="_blank">Деструктуризация</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/es-function" target="_blank">Функции</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/es-string" target="_blank">Строки</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/es-object" target="_blank">Объекты и прототипы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/es-class" target="_blank">Классы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/symbol" target="_blank">Тип данных Symbol</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/iterator" target="_blank">Итераторы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/set-map" target="_blank">Set, Map, WeakSet и WeakMap</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/promise" target="_blank">Promise</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/generator" target="_blank">Генераторы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/modules" target="_blank">Модули</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://learn.javascript.ru/proxy" target="_blank">Proxy</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--==============================Geekbrains=============================================-->
+
+				<li class="opposite-side">
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Ресурс Geekbrains</h4>
+						<div class="panel-group" id="accordionGeek" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionGeek" href="#geek" aria-expanded="false" aria-controls="geek" class="collapsed accordionBlock">
+											Основы Веб-дизайна
+										</p>
+									</div>
+								</div>
+								<div id="geek" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Особенности профессии "веб-дизайнер"</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Как создать сайт с хорошим дизайном?</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Создание дизайн-макета. Мастер-класс</span><br>
+										<a class="btn btn-default" href= "https://geekbrains.ru/certificates/128409" target="_blank">Получен сертификат</a><time class="pull-right">30.10.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek1" aria-expanded="false" aria-controls="geek1">
+											Основы программирования
+										</p>
+									</div>
+								</div>
+								<div id="geek1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Переменные, типы данных, ветвления</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Циклы; вёрстка сайта на HTML и CSS</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Разработка веб-сайта с играми; функции</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Выбор направления и языка программирования</span><br>
+										<a class="btn btn-default" href= "https://geekbrains.ru/certificates/133036" target="_blank">Получен сертификат</a><time class="pull-right">08.11.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<div class="panel-title">
+										<p class="collapsed panel-collapse accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek2" aria-expanded="false" aria-controls="geek2">
+											Git. Быстрый старт
+										</p>
+									</div>
+								</div>
+								<div id="geek2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Назначение и возможности</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Базовые операции</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Откат изменений кода</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Работа с ветками</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Конфликты</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Распространенные ошибки. Часть 1</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Распространенные ошибки. Часть 2</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Консольный git-клиент. Базовые операции</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Консольный git-клиент. Работа с ветками</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Работа с версиями программы</span><br>
+										<a href="https://github.com/Pomechik" target="_blank">Мой <i class="fa fa-github" aria-hidden="true"></i></a><br>
+										<a class="btn btn-default" href= "https://geekbrains.ru/certificates/129754" target="_blank">Получен сертификат</a><time class="pull-right">01.11.2016</time><br>
+
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek3" aria-expanded="false" aria-controls="geek3">
+											Интенсив по разработке сайтов
+										</p>
+									</div>
+								</div>
+								<div id="geek3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Дополнение к основам программирования</span><br>
+										<a class="btn btn-default" href= "https://geekbrains.ru/certificates/133358" target="_blank">Получен сертификат</a><time class="pull-right">09.11.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek4" aria-expanded="false" aria-controls="geek4">
+											Основы программирования, дополнение
+										</p>
+									</div>
+								</div>
+								<div id="geek4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Дополнение к основам программирования, видеокурс</span><br>
+										<a class="btn btn-default" href= "https://geekbrains.ru/certificates/136316#" target="_blank">Получен сертификат</a>
+										<time class="pull-right">15.11.2016</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<div class="panel-title">
+										<p class="collapsed accordionBlock" data-toggle="collapse" data-parent="#accordionGeek" href="#geek5" aria-expanded="false" aria-controls="geek5">
+											Веб-разработка. Быстрый старт
+										</p>
+									</div>
+								</div>
+								<div id="geek5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Для чего нужен PHP</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Установка сервера на своем компьютере</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Как создавать веб-страницы</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Создаём макет нашего магазина</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Завершаем оформление шаблона</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Основы PHP</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Как хранить множество связанных данных</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Хранение и обработка связанных данныx</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Работаем с циклами</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Как сделать сайт живым</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Как делать навигацию между страницами</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Создаём каталог товаров</span><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Размещаем сайт в интернете</span><br>
+										<a class="btn" href="#" target="_blank" disabled>Получен сертификат</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--==============================Html5book==============================================-->
+
+				<li>
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Ресурс Html5book</h4>
+						<div class="panel-group" id="accordion5book" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordion5book" href="#5book" aria-expanded="false" aria-controls="5book" class="collapsed accordionBlock">
+											HTML
+										</p>
+									</div>
+								</div>
+								<div id="5book" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a>Тема</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordion5book" href="#5book1" aria-expanded="false" aria-controls="5book1" class="collapsed accordionBlock">
+											CSS
+										</p>
+									</div>
+								</div>
+								<div id="5book1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://html5book.ru/osnovy-css/" target="_blank">Основы CSS</a>
+										<time class="pull-right">01.02.2017</time><br>
+										<a href="https://html5book.ru/block-inline-elements/" target="_blank">Блочные и строчные элементы</a>
+										<time class="pull-right">02.02.2017</time><br>
+										<a href="https://html5book.ru/css-position/" target="_blank">CSS позиционирование</a>
+										<time class="pull-right">02.02.2017</time><br>
+										<a href="https://html5book.ru/css-text/" target="_blank">CSS текст</a>
+										<time class="pull-right">02.02.2017</time><br>
+										<a href="https://html5book.ru/css-shrifty/" target="_blank">CSS шрифты</a>
+										<time class="pull-right">03.02.2017</time><br>
+										<a href="https://html5book.ru/styling-hyperlinks/" target="_blank">CSS ссылки</a>
+										<time class="pull-right">03.02.2017</time><br>
+										<a href="https://html5book.ru/css3-tables/" target="_blank">CSS таблицы</a>
+										<time class="pull-right">03.02.2017</time><br>
+										<a href="https://html5book.ru/generatory-css/" target="_blank">CSS генераторы</a>
+										<time class="pull-right">04.02.2017</time><br>
+										<a href="https://html5book.ru/css-spiski/" target="_blank">CSS списки</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css-background/" target="_blank">CSS фон</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css-border/" target="_blank">CSS рамка</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css-content/" target="_blank">CSS content</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css-colors/" target="_blank">CSS цвета</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-text/" target="_blank">CSS3 текст</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-gradient/" target="_blank">CSS3 градиент</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-borders/" target="_blank">CSS3 рамка</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-ten-teksta/" target="_blank">CSS3 тень текста</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-ten-bloka/" target="_blank">CSS3 тень блока</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-transition/" target="_blank">CSS3 переходы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-transform/" target="_blank">CSS3 трансформации</a>
+										<time class="pull-right">27.01.2017</time><br>
+										<a href="https://html5book.ru/css3-animation/" target="_blank">CSS3 анимация</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-flexbox/" target="_blank">CSS3 flexbox</a>
+										<time class="pull-right">26.01.2017</time><br>
+										<a href="https://html5book.ru/css3-columns/" target="_blank">CSS3 columns</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/3d-transform/" target="_blank">CSS3 3D трансформации</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-mediazaprosy/" target="_blank">CSS3 медиа запросы</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/css3-filtry/" target="_blank">CSS3 фильтры</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordion5book" href="#5book2" aria-expanded="false" aria-controls="5book2" class="collapsed accordionBlock">
+											JS
+										</p>
+									</div>
+								</div>
+								<div id="5book2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://html5book.ru/osnovy-javascript/" target="_blank">Основы JavaScript</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/vyrazheniya-v-javascript/" target="_blank">Выражения в JavaScript</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/vvedenie-v-jquery/" target="_blank">Введение в jQuery</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/metody-jquery/" target="_blank">Методы jQuery</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/sobytiya-jquery/" target="_blank">События jQuery</a>
+										<time class="pull-right">-.-.-</time><br>
+										<a href="https://html5book.ru/jquery-selectors/" target="_blank">Селекторы jQuery</a>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordion5book" href="#5book3" aria-expanded="false" aria-controls="5book3" class="collapsed accordionBlock">
+											Типографика
+										</p>
+									</div>
+								</div>
+								<div id="5book3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://html5book.ru/kakoj-shrift-mne-ispolzovat-pyat-principov-vybora-i-ispolzovaniya-shriftov/" target="_blank">Пять принципов выбора и использования шрифтов</a>
+										<time class="pull-right">05.12.16</time><br>
+										<a href="https://html5book.ru/shrift-dlya-sita/" target="_blank">Выбираем шрифт для сайта</a>
+										<time class="pull-right">05.12.16</time><br>
+										<a href="https://html5book.ru/pravila-veb-tipografiki/" target="_blank">Правила веб-типографики</a>
+										<time class="pull-right">06.12.16</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--==============================itVDN==================================================-->
+
+				<li class="opposite-side">
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Ресурс itVDN</h4>
+						<div class="panel-group" id="accordionItvdn" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionItvdn" href="#Itvdn" aria-expanded="false" aria-controls="Itvdn" class="collapsed accordionBlock">
+											HTML и CSS
+										</p>
+									</div>
+								</div>
+								<div id="Itvdn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Тест HTML и CSS на testprovider.com ID сертификата TP71686673</span><br>
+										<a class="btn btn-default" href="http://testprovider.com/ru/cabinet/certificates" target="_blank">Получен сертификат</a>
+										<time class="pull-right">10.02.2017</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionItvdn" href="#Itvdn1" aria-expanded="false" aria-controls="Itvdn1" class="collapsed accordionBlock">
+											jQuery
+										</p>
+									</div>
+								</div>
+								<div id="Itvdn1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Видеокурс</span>
+										<time class="pull-right">25-30.04.2017</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--=============================Практика, проекты=======================================-->
+
+				<li>
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Мои проекты и практика</h4>
+						<div class="panel-group" id="accordionMyPractik" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Languages" aria-expanded="false" aria-controls="Languages" class="collapsed accordionBlock">
+											Pands - практика позиционирования
+										</p>
+									</div>
+								</div>
+								<div id="Languages" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Позиционирование блоков</span>
+										<time class="pull-right">17/18/20.09.2016</time><br>
+										<span>Позиционирование блоков</span>
+										<time class="pull-right">21/23.09.2016</time><br>
+										<span>Позиционирование блоков</span>
+										<time class="pull-right">01.10.2016</time><br>
+										<a href="https://1landlord.github.io/pands/" target="_blank">Ссылка на работу</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#SongbookMD" aria-expanded="false" aria-controls="SongbookMD" class="collapsed accordionBlock">
+											Acnostia - практика верстки из PSD
+										</p>
+									</div>
+								</div>
+								<div id="SongbookMD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<p>Для практики нашел в интернете безплатный шаблон PSD, верстал на Bootstrap3 + Flexbox + Adobe assets</p>
+										<span>Full screen carousel</span>
+										<time class="pull-right">23/24.01.2017</time><br>
+										<span>Flexbox</span>
+										<time class="pull-right">25/26.01.2017</time><br>
+										<span>Верстка</span>
+										<time class="pull-right">27/28.01.2017</time><br>
+										<span>Адаптация под разные экраны</span>
+										<time class="pull-right">03/04/06.02.2017</time><br>
+										<span>Заливка на Github</span>
+										<time class="pull-right">07.02.2017</time><br>
+										<a href="https://1landlord.github.io/acnostia" target="_blank">Ссылка на работу</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Busines" aria-expanded="false" aria-controls="Busines" class="collapsed accordionBlock">
+											BusinesTheme - практика верстки из PSD
+										</p>
+									</div>
+								</div>
+								<div id="Busines" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<p>Для практики нашел в интернете безплатный шаблон PSD</p>
+										<span>Menu, Header</span>
+										<time class="pull-right">21-23.03.2017</time><br>
+										<span>Our Services</span>
+										<time class="pull-right">24.03.2017</time><br>
+										<span>About us</span>
+										<time class="pull-right">25.03.2017</time><br>
+										<span>Price, works</span>
+										<time class="pull-right">26.03.2017</time><br>
+										<span>Happy clients, footer</span>
+										<time class="pull-right">27-28.03.2017</time><br>
+										<a href="https://1landlord.github.io/BusinesTheme/" target="_blank">Ссылка на работу</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#medicineLux" aria-expanded="false" aria-controls="medicineLux" class="collapsed accordionBlock">
+											CMS Wix - практика
+										</p>
+									</div>
+								</div>
+								<div id="medicineLux" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Срочный заказ на сайт</span>
+										<time class="pull-right">14.02.2017</time><br>
+										<span>Наполнение сайта контентом</span>
+										<time class="pull-right">14/15/16.02.2017</time><br>
+										<span>Дизайн на коленке, адаптивность</span>
+										<time class="pull-right">17/18.02.2017</time><br>
+										<span>Заказ SEO(база)</span>
+										<time class="pull-right">22.02.2017</time><br>
+										<span>Чек лист по Seo</span><a class="pull-right" href="https://www.evernote.com/shard/s134/sh/cfb5dbd5-4ded-4d44-bb6e-aafb132df643/fd8b8449cd4d251a012d13d0a7fc65cf" target="_blank"><img class="forEvernote" src="img/evernote.png" alt="evernote"></a><br>
+										<a href="http://www.medicinelux.com/" target="_blank">Ссылка на работу</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Songbook" aria-expanded="false" aria-controls="Songbook" class="collapsed accordionBlock">
+											Songbook
+										</p>
+									</div>
+								</div>
+								<div id="Songbook" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>background адаптивный </span>
+										<time class="pull-right">10.11.2016</time><br>
+										<span>@media запросы </span>
+										<time class="pull-right">11.11.2016</time><br>
+										<span>transition CSS </span>
+										<time class="pull-right">11.11.2016</time><br>
+										<span>Адаптивное меню </span>
+										<time class="pull-right">12.11.2016</time><br>
+										<span>Подготовка фона в Фотошоп, сканы</span>
+										<time class="pull-right">24.11.2016</time><br>
+										<span>Подготовка фона в Фотошоп, сканы</span>
+										<time class="pull-right">06.12.2016</time><br>
+										<a href="../../projects/songbook/index.html" target="_blank">Ссылка на работу</a>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#Frontend" aria-expanded="false" aria-controls="Frontend" class="collapsed accordionBlock">
+											К Frontend
+										</p>
+									</div>
+								</div>
+								<div id="Frontend" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<span>Переработка главной страницы</span>
+										<time class="pull-right">21.11.2016</time><br>
+										<span>Добавление footer с прогрессами</span>
+										<time class="pull-right">21.11.2016</time><br>
+										<span>Страница для ресурса webref</span>
+										<time class="pull-right">21.11.2016</time><br>
+										<span>Настройка дизайна</span>
+										<time class="pull-right">21.11.2016</time><br>
+										<span>Настройка footer</span>
+										<time class="pull-right">22.11.2016</time><br>
+										<span>Настройка footer, оптимизация Css</span>
+										<time class="pull-right">23.11.2016</time><br>
+										<span>Реализация accordion, главная</span>
+										<time class="pull-right">24.11.2016</time><br>
+										<span>Наполнение сайта данными</span>
+										<time class="pull-right">25.11.2016</time><br>
+										<span>Реализация accordion, вторые уровни</span>
+										<time class="pull-right">28.11.2016</time><br>
+										<span>Форма обратной связи на <a href="http://webdesign-master.ru/blog/javascript/14.html" target="_blank">Ajax</a></span>
+										<time class="pull-right">29.11.2016</time><br>
+										<span>Анимация и градиенты</span>
+										<time class="pull-right">01.12.2016</time><br>
+										<span>Проработка меню и стр. ref</span>
+										<time class="pull-right">02.12.2016</time><br>
+										<span>Подключение Bootstrap3</span>
+										<time class="pull-right">30.12.2016</time><br>
+										<span>Главная на Bootstrap</span>
+										<time class="pull-right">10/11/12.01.2017</time><br>
+										<span>Дизайн подвал</span>
+										<time class="pull-right">13/14.01.2017</time><br>
+										<span>Настройка на Bootstrap</span>
+										<time class="pull-right">15/18.01.2017</time><br>
+										<span>Переработка accordion</span>
+										<time class="pull-right">16/17.01.2017</time><br>
+										<span>Адаптация под разные разрешения</span>
+										<time class="pull-right">19.01.2017</time><br>
+										<span>Выложил сайт на GitHubPage</span>
+										<time class="pull-right">20.01.2017</time><br>
+										<span>Мелкие правки</span>
+										<time class="pull-right">22/23.01.2017</time><br>
+										<span>Добавил animate.css</span>
+										<time class="pull-right">09.02.2017</time><br>
+										<span>Redesign</span>
+										<time class="pull-right">15-24.03.2017</time><br>
+										<span>Перенос, сборка проекта с Gulp</span>
+										<time class="pull-right">02-06.04.2017</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#fotocollage" aria-expanded="false" aria-controls="fotocollage" class="collapsed accordionBlock">
+											Сайт коллаж фото семья<i class="fa fa-address-card-o rightP" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+								<div id="fotocollage" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>1</span>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionMyPractik" href="#familyTree" aria-expanded="false" aria-controls="familyTree" class="collapsed accordionBlock">
+											Сайт Семейное дерево<i class="fa fa-address-card-o rightP" aria-hidden="true"></i>
+										</p>
+									</div>
+								</div>
+								<div id="familyTree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>1</span>
+										<time class="pull-right">-.-.-</time><br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+
+				<!--=============================Разное==================================================-->
+
+				<li class="opposite-side">
+					<div class="border-line"></div>
+					<article class="timeline-description">
+						<h4 class="blokAcc">Разные интересности</h4>
+						<div class="panel-group" id="accordionDifferent" role="tablist" aria-multiselectable="true">
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionDifferent" href="#books" aria-expanded="false" aria-controls="books" class="collapsed accordionBlock">
+											Книги
+										</p>
+									</div>
+								</div>
+								<div id="books" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<input type="checkbox">
+										<cite>Секреты CSS</cite><small class="pull-right">автор Леа Веру</small><br>
+										<span>Практика по книге</span><br>
+										<span>Адаптивные кнопки</span>
+										<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Полупрозрачные рамки</span>
+										<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Внутренее скругление</span>
+										<a class="pull-right" href="http://codepen.io/Landlord/pen/WRprMQ" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Гибкие эллипсы</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Параллелограммы</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Изображения в форме ромба</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Срезанные углы</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Вкладки в форме трапеций</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Простые секторные диаграммы</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Тени</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+										<span>Цветовой тон</span>
+										<a class="pull-right" href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionDifferent" href="#habr" aria-expanded="false" aria-controls="habr" class="collapsed accordionBlock">
+											Habrahabr
+										</p>
+									</div>
+								</div>
+								<div id="habr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<a href="https://habrahabr.ru/post/154319/" target="_blank">Популярно о псевдоэлементах :Before и :After</a>
+										<time class="pull-right">27.10.2016</time><br>
+										<a href="https://habrahabr.ru/post/141658/#_=_" target="_blank">Все о свойстве border</a>
+										<time class="pull-right">22.11.2016</time><br>
+										<a href="https://habrahabr.ru/post/189766/#_=_" target="_blank">Теория цвета в цифрах</a>
+										<time class="pull-right">прочитать</time><br>
+										<a href="https://peredelka.wordpress.com/2013/10/29/%D0%BE-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B5-%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%80%D0%B8%D1%82%D0%BC%D0%B0/" target="_blank">О верстке вертикального ритма</a>
+										<time class="pull-right">прочитать</time><br>
+										<a href="https://habrahabr.ru/post/189118/" target="_blank">Проблемы CSS. Часть 1</a>
+										<time class="pull-right">прочитать</time><br>
+										<a href="https://habrahabr.ru/post/189252/" target="_blank">Проблемы CSS. Часть 2</a>
+										<time class="pull-right">15.01.2017</time><br>
+										<a href="https://habrahabr.ru/post/313938/#first_unread" target="_blank">Шпаргалка по Flexbox</a>
+										<a href="http://codepen.io/Landlord/pen/qRKeYP" target="_blank"> + <i class="fa fa-codepen" aria-hidden="true"></i></a>
+										<time class="pull-right">06.02.2017</time><br>
+										<a href="https://habrahabr.ru/post/257253/" target="_blank">Строим с Flexbox</a>
+										<time class="pull-right">06.02.2017</time><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionDifferent" href="#interest2" aria-expanded="false" aria-controls="interest2" class="collapsed accordionBlock">
+											Сокращения
+										</p>
+									</div>
+								</div>
+								<div id="interest2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<h5 class="text-info">Свойство background</h5><br>
+										<span>background: [bc] [bi] [br] [bp] [ba];</span><br>
+										<span>Обозначения:</span><br>
+										<span>[bc] — background-color</span><br>
+										<span>[bi] — background-image</span><br>
+										<span>[br] — background-repeat</span><br>
+										<span>[bp] — background-position</span><br>
+										<span>[ba] — background-attachment</span><br>
+										<span>Пример:<code>background: #7f8c8c url("avatar.png") no-repeat 50% 50%;</code>без [ba]</span>
+										<h5 class="text-info">Смещение тени</h5><br>
+										<span>box-shadow:</span><br>
+										<span>[inset] - внутренняя</span><br>
+										<span>+- 5px  - смещение по x</span><br>
+										<span>+- 5px  - смещение по y</span><br>
+										<span>[2px]   - размытие</span><br>
+										<span>[3px]   - растяжение</span><br>
+										<span>[red];  - цвет</span><br>
+										<span>размытие есть, растяжение отрицательное — тень очень светлая;</span><br>
+										<span>размытие есть, растяжения нет — тень обычная;</span><br>
+										<span>размытие больше растяжения — тень темнее обычного;</span><br>
+										<span>размытие меньше растяжения — тень очень темная.</span><br>
+										<h5 class="text-info">Параметры перехода перечисляются через пробел:</h5><br>
+										<span>свойство, длительность, форма и задержка:</span><br>
+										<span>Пример:<code>transition: width 1s ease-in 2s;</code></span><br>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionDifferent" href="#seo" aria-expanded="false" aria-controls="seo" class="collapsed accordionBlock">
+											SEO
+										</p>
+									</div>
+								</div>
+								<div id="seo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<h5>Searh console Веб-мастеру</h5>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Модуль 1. Как создать интересный сайт</span>
+										<time class="pull-right">25.10.2016</time><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Модуль 2. Как Google обрабатывает ваш сайт</span>
+										<time class="pull-right">-.-.-</time><br>
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Модуль 3. Воспользуйтесь нашими ресурсами</span>
+										<time class="pull-right">-.-.-</time><br>
+										<p><a href="https://support.google.com/webmasters/answer/6001095?hl=ru&ref_topic=4631146" target="_blank">ссылка</a></p>
+										<div class="progress progress-striped active">
+											<div class="progress-bar" style="width: 3%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel panelHoverAccordion">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<div class="panel-title">
+										<p data-toggle="collapse" data-parent="#accordionDifferent" href="#PhotoShop" aria-expanded="false" aria-controls="PhotoShop" class="collapsed accordionBlock">
+											PhotoShop
+										</p>
+									</div>
+								</div>
+								<div id="PhotoShop" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+									<div class="panel-body">
+										<i class="fa fa-check-square-o" aria-hidden="true"></i>
+										<span>Курсы PhotoShop Зинаиды Лукьяновой</span>
+										<time class="pull-right">-.-.-</time><br>
+										<div class="progress progress-striped active">
+											<div class="progress-bar" style="width: 3%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</li>
+			</ul>
+
 				</div>
 			</div>
+			
 		</div>
-	</section><!--===Секция My path end====-->
+	</section><!--===Секция skills end====-->
 
 	<!--=============================Footerß=====================================================-->
 	<footer>
@@ -1773,15 +1848,15 @@
 					<div class="progress progress-striped active">
 						<div class="progress-bar" style="width: 40%"></div>
 					</div>
-					<abbr title="Gрограммное обеспечение как услуга">Saas</abbr>
+					<abbr title="Это метаязык на основе CSS, предназначенный для увеличения уровня абстракции CSS кода и упрощения файлов каскадных таблиц стилей.">Saas</abbr>
 					<div class="progress progress-striped active">
-						<div class="progress-bar" style="width: 60%"></div>
+						<div class="progress-bar" style="width: 50%"></div>
 					</div>
 				</div>
 				<div class="col-md-2 footerSection" >
 					<abbr title="Библиотека JavaScript">jQuery</abbr>
 					<div class="progress progress-striped active">
-						<div class="progress-bar" style="width: 1%"></div>
+						<div class="progress-bar" style="width: 15%"></div>
 					</div>
 					<abbr title="Программная платформа, основанная на движке V8 (транслирующем JavaScript в машинный код">Node.js</abbr>
 					<div class="progress progress-striped active">
@@ -1830,17 +1905,19 @@
 						<h4>Обратная связь</h4>
 						<form action="https://formspree.io/vl_che@bk.ru" method="post" class="form-horizontal" target="_blank">
 							<fieldset>
-								<div class="col-lg-12 myForm">
-									<input type="text" name="name" class="form-control formColor" placeholder="Ваше имя" required>
+								<div class="row">
+								<div class="col-lg-12">
+									<input type="text" name="name" class="form-control MyformColor" placeholder="Ваше имя" required>
 								</div>
-								<div class="col-lg-12 myForm">
-									<input type="email" name="email" class="form-control formColor" placeholder="Ваш Email" required>
+								<div class="col-lg-12">
+									<input type="email" name="email" class="form-control MyformColor" placeholder="Ваш Email" required>
 								</div>
-								<div class="col-lg-12 myForm">
-									<textarea name="messege" class="form-control formColor" rows="3" placeholder="Ваше сообщение" required></textarea>
+								<div class="col-lg-12">
+									<textarea name="messege" class="form-control MyformColor" rows="3" placeholder="Ваше сообщение" required></textarea>
 								</div>
-								<div class="col-lg-10 myForm">
+								<div class="col-lg-10">
 									<button type="submit" class="btn btn-default btn-lg">Отправить</button>
+								</div>
 								</div>
 							</fieldset>
 						</form>
@@ -1863,16 +1940,9 @@
 			</div>
 		</div>
 	</footer>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/owl.carousel.min.js" ></script>
-	<script src="js/equalHeights.min.js" ></script>
-	<script src="js/jquery.malihu.PageScroll2id.min.js" ></script>
-	<script src="js/animate-css.js"></script>
-   <script src="js/mixitup.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/my.js"></script>
 </body>
 </html>
-
